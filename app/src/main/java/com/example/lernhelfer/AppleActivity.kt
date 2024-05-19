@@ -1,0 +1,13 @@
+package com.example.mylistviewdemo
+
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.example.lernhelfer.R
+
+class AppleActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_apple)
+    }
+}
