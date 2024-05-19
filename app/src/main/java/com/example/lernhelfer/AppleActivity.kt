@@ -1,4 +1,4 @@
-package com.example.mylistviewdemo
+package com.example.lernhelfer
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
