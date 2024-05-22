@@ -2,6 +2,7 @@ package com.example.lernhelfer
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -22,11 +23,11 @@ class AppleActivity : AppCompatActivity() {
         textViewCentimeters = findViewById(R.id.textViewConvert)
 
         convertButton.setOnClickListener {
-            if (!enterInches.text.toString().isEmpty())
-            val result = enterInches.text.toString().toDouble() * inchValue
-            textViewCentimeters.text = result.toString()
-        } else {
-            textViewCentimeters.text = getString(R.string.text)
+            if (!enterInches.text.toString().isEmpty()) {
+                val result = enterInches.text.toString().toDouble() * inchValue
+                textViewCentimeters.text = result.toString()
+            } else {
+                textViewCentimeters.text = getString(R.string.text)
         }
 
         }
