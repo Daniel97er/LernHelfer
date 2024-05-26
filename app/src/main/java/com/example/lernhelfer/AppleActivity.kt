@@ -27,7 +27,7 @@ class AppleActivity : AppCompatActivity() {
                 val result = enterInches.text.toString().toDouble() * inchValue
                 textViewCentimeters.text = result.toString()
             } else {
-                textViewCentimeters.text = "Please enter a numberaaa"
+                textViewCentimeters.text = "Please enter a number"
         }
 
         }
