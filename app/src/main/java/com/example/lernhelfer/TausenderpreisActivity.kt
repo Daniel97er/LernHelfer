@@ -10,7 +10,7 @@ class TausenderpreisActivity : AppCompatActivity() {
     private val inchValue = 2.54
     private lateinit var enterInches: EditText
     private lateinit var convertButton: Button
-    private lateinit var textViewCentimeters: TextViewdr
+    private lateinit var textViewCentimeters: TextView
 
 
 
