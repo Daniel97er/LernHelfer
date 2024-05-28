@@ -12,7 +12,7 @@
         android:theme="@style/Theme.LernHelfer">
         <activity android:name=".OrangeActivity"
             tools:ignore="MissingClass"></activity>
-        <activity android:name=".AppleActivity"
+        <activity android:name=".TausenderpreisActivity"
             tools:ignore="MissingClass" />
         <activity android:name=".MainActivity"
             tools:ignore="MissingClass"

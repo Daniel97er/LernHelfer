@@ -6,7 +6,7 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
-class AppleActivity : AppCompatActivity() {
+class TausenderpreisActivity : AppCompatActivity() {
     private val inchValue = 2.54
     private lateinit var enterInches: EditText
     private lateinit var convertButton: Button
@@ -16,7 +16,7 @@ class AppleActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_apple)
+        setContentView(R.layout.activity_tausenderpreis)
 
         enterInches = findViewById(R.id.editTextInches)
         convertButton = findViewById(R.id.button_convert)
