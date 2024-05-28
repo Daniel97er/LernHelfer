@@ -8,9 +8,10 @@ import androidx.appcompat.app.AppCompatActivity
 
 class TausenderpreisActivity : AppCompatActivity() {
     private val inchValue = 2.54
-    private lateinit var enterInches: EditText
-    private lateinit var convertButton: Button
-    private lateinit var textViewCentimeters: TextView
+    private lateinit var enterWerbepreis: EditText
+    private lateinit var enterBruttoreichweite: EditText
+    private lateinit var calculateButton: Button
+    private lateinit var textViewResult: TextView
 
 
 
@@ -18,16 +19,17 @@ class TausenderpreisActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tausenderpreis)
 
-        enterInches = findViewById(R.id.editTextInches)
-        convertButton = findViewById(R.id.button_convert)
-        textViewCentimeters = findViewById(R.id.textViewConvert)
+        enterWerbepreis = findViewById(R.id.editWerbepreis)
+        enterBruttoreichweite = findViewById(R.id.editBruttoreichweite)
+        calculateButton = findViewById(R.id.buttonBerechnen)
+        textViewResult = findViewById(R.id.textAusgabe)
 
-        convertButton.setOnClickListener {
-            if (!enterInches.text.toString().isEmpty()) {
-                val result = enterInches.text.toString().toDouble() * inchValue
-                textViewCentimeters.text = result.toString()
+        calculateButton.setOnClickListener {
+            if (enterWerbepreis.text.toString().isNotEmpty() and enterBruttoreichweite.text.toString().isNotEmpty())  {
+                val result = enterWerbepreis.text.toString().toDouble() / enterBruttoreichweite.text.toString().toDouble()
+                textViewResult.text = result.toString()
             } else {
-                textViewCentimeters.text = "Please enter a number"
+                textViewResult.text = "Please enter a number"
         }
 
         }

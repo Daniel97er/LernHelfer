@@ -1,48 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".TausenderpreisActivity">
+    android:layout_height="match_parent">
 
-
-    <EditText
-        android:id="@+id/editTextInches"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="253dp"
-        android:layout_marginEnd="94dp"
-        android:layout_marginBottom="433dp"
-        android:ems="10"
-        android:hint="Enter Inches"
-        android:inputType="text" />
-
-    <Button
-        android:id="@+id/button_convert"
-        android:layout_width="180dp"
-        android:layout_height="92dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="127dp"
-        android:layout_marginEnd="104dp"
-        android:layout_marginBottom="267dp"
-        android:text="Convert" />
-
+    <!-- Text "Tausenderpreis" -->
     <TextView
-        android:id="@+id/textViewConvert"
+        android:id="@+id/textTausenderpreis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="191dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginBottom="171dp"
-        android:text="TextView" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Tausenderpreis"
+        android:textStyle="bold"
+        android:textSize="32sp" />
+
+    <!-- Eingabefeld für Werbepreis -->
+    <EditText
+        android:id="@+id/editWerbepreis"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTausenderpreis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:hint="Werbepreis" />
+
+    <!-- Eingabefeld für Bruttoreichweite -->
+    <EditText
+        android:id="@+id/editBruttoreichweite"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editWerbepreis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:hint="Bruttoreichweite" />
+
+    <!-- Größerer Button -->
+    <Button
+        android:id="@+id/buttonBerechnen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editBruttoreichweite"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="Berechnen" />
+
+    <!-- Ausgabefeld -->
+    <TextView
+        android:id="@+id/textAusgabe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonBerechnen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Ausgabe hier"
+        android:textStyle="bold"
+        android:textSize="18sp" />
 </RelativeLayout>
