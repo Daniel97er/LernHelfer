@@ -52,7 +52,19 @@
         android:layout_below="@id/buttonBerechnen"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
-        android:text="Ausgabe hier"
+        android:text="..."
         android:textStyle="bold"
         android:textSize="18sp" />
+
+    <!-- Formel und Erklärung -->
+    <TextView
+        android:id="@+id/formel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textAusgabe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Werbepreis/Bruttoreichweite x 1.000"
+        android:textSize="18sp" />
+
 </RelativeLayout>

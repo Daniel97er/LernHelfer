@@ -26,10 +26,10 @@ class TausenderpreisActivity : AppCompatActivity() {
 
         calculateButton.setOnClickListener {
             if (enterWerbepreis.text.toString().isNotEmpty() and enterBruttoreichweite.text.toString().isNotEmpty())  {
-                val result = enterWerbepreis.text.toString().toDouble() / enterBruttoreichweite.text.toString().toDouble()
-                textViewResult.text = result.toString()
+                val result = (enterWerbepreis.text.toString().toDouble() / enterBruttoreichweite.text.toString().toDouble()) * 1000
+                textViewResult.text = String.format("%.2f", result.toString())
             } else {
-                textViewResult.text = "Please enter a number"
+                textViewResult.text = "Bitte überprüfen Sie ihre Eingabe"
         }
 
         }
