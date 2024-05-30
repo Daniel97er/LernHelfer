@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             when (position) {
                 0 -> startActivity(Intent(this@MainActivity, TausenderpreisActivity::class.java))
                 1 -> startActivity(Intent(this@MainActivity, OrangeActivity::class.java))
-                // Add more cases for other positions if neededdd
+                // Add more cases for other positions if needed
             }
         }
     }
