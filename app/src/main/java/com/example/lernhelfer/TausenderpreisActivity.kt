@@ -7,7 +7,6 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class TausenderpreisActivity : AppCompatActivity() {
-    private val inchValue = 2.54
     private lateinit var enterWerbepreis: EditText
     private lateinit var enterBruttoreichweite: EditText
     private lateinit var calculateButton: Button
