@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         val listView: ListView = findViewById(R.id.listview)
 
-        val list = listOf("Tausenderpreis", "Orange", "Bananaa", "Grapes")
+        val list = listOf("Tausenderpreis", "Orange", "Bananaaa", "Grapes")
 
         val arrayAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, list)
         listView.adapter = arrayAdapter
