@@ -5,11 +5,40 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- Zentrierter Text -->
+    <TextView
+        android:id="@+id/centeredText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wirtschaft"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Erste Liste -->
     <ListView
+        android:id="@+id/listview1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/listview"/>
+        android:layout_below="@id/centeredText1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
 
+    <!-- Text über der zweiten Liste -->
+    <TextView
+        android:id="@+id/aboveSecondListText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zusätzlicher Text"
+        android:layout_below="@id/listview1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
 
-
+    <!-- Zweite Liste -->
+    <ListView
+        android:id="@+id/listview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aboveSecondListText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
 </RelativeLayout>
