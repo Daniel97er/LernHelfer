@@ -110,12 +110,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
         android:text="Zieleinkaufspreis = Listeneinkaufspreispreis - (Listeneinkaufspreispreis / 100) * Lieferantenrabatt"
-        android:text1="Bareinkaufspreis = Zieleinkaufspreispreis - (Zieleinkaufspreispreis / 100) * Lieferantenskonti"
-        android:text2="Bezugspreis = Bareinkaufspreis + Bezugskosten"
-        android:text3="Listeneinkaufspreispreis ist der Nettobetrag ohne Umsatzsteuer."
-        android:text4="Beim Zieleinkaufspreis ist der Lieferantenrabatt noch vom Listeneinkaufspreispreis abgezogen."
-        android:text5="Beim Bareinkaufspreis ist der Skonto noch vom Zieleinkaufspreispreis abgezogen."
-        android:text6="Beim Bezugspreispreis werden noch die Bezugskosten auf den Bareinkaufspreis dazugerechnet."
         android:textSize="18sp" />
 
 </RelativeLayout>
