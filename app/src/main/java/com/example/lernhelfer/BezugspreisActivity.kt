@@ -33,9 +33,9 @@ class BezugspreisActivity : AppCompatActivity() {
 
         calculateButton.setOnClickListener {
             if (enterListeneinkaufspreis.text.toString().isNotEmpty() and enterLieferantenrabatt.text.toString().isNotEmpty() and enterLieferantenskonti.text.toString().isNotEmpty() and enterBezugskosten.text.toString().isNotEmpty()) {
-                    val zieleinkaufspreis = enterListeneinkaufspreis - ((enterListeneinkaufspreis.text.toString().toDouble() / 100) * enterLieferantenrabatt)
-                    val bareinkaufspreis = zieleinkaufspreis - ((zieleinkaufspreis / 100) * enterLieferantenskonti)
-                    val bezugspreis = bareinkaufspreis + enterBezugskosten
+                    val zieleinkaufspreis = enterListeneinkaufspreis.text.toString().toDouble() - ((enterListeneinkaufspreis.text.toString().toDouble() / 100) * enterLieferantenrabatt.text.toString().toDouble())
+                    val bareinkaufspreis = zieleinkaufspreis - ((zieleinkaufspreis / 100) * enterLieferantenskonti.text.toString().toDouble())
+                    val bezugspreis = bareinkaufspreis + enterBezugskosten.text.toString().toDouble()
                     textViewResult1.text = String.format("%.2f", zieleinkaufspreis) + " €"
                     textViewResult2.text = String.format("%.2f", bareinkaufspreis) + " €"
                     textViewResult3.text = String.format("%.2f", bezugspreis) + " €"
