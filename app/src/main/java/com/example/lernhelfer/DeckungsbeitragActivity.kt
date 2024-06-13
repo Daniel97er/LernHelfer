@@ -21,7 +21,7 @@ class DeckungsbeitragActivity : AppCompatActivity() {
         enterBarverkaufspreis = findViewById(R.id.editBarverkaufspreis)
         enterVariableKosten = findViewById(R.id.editVariableKosten)
         calculateButton = findViewById(R.id.buttonBerechnen)
-        textViewResult = findViewById(R.id.textAusgabe1)
+        textViewResult = findViewById(R.id.textAusgabe)
 
         calculateButton.setOnClickListener {
             if (enterBarverkaufspreis.text.toString().isNotEmpty() and (enterVariableKosten.text.toString().isNotEmpty())) {
