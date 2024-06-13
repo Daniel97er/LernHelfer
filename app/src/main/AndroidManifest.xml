@@ -12,6 +12,8 @@
         android:theme="@style/Theme.LernHelfer">
         <activity android:name=".BezugspreisActivity"
             tools:ignore="MissingClass"></activity>
+        <activity android:name=".DeckungsbeitragActivity"
+            tools:ignore="MissingClass"></activity>
         <activity android:name=".OrangeActivity"
             tools:ignore="MissingClass"></activity>
         <activity android:name=".TausenderpreisActivity"

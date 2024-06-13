@@ -6,7 +6,7 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
-class DeckungsbetragActivity : AppCompatActivity() {
+class DeckungsbeitragActivity : AppCompatActivity() {
     private lateinit var enterBarverkaufspreis: EditText
     private lateinit var enterVariableKosten: EditText
     private lateinit var calculateButton: Button
@@ -21,7 +21,7 @@ class DeckungsbetragActivity : AppCompatActivity() {
         enterBarverkaufspreis = findViewById(R.id.editBarverkaufspreis)
         enterVariableKosten = findViewById(R.id.editVariableKosten)
         calculateButton = findViewById(R.id.buttonBerechnen)
-        textViewResult = findViewById(R.id.textAusgabe)
+        textViewResult = findViewById(R.id.textAusgabe1)
 
         calculateButton.setOnClickListener {
             if (enterBarverkaufspreis.text.toString().isNotEmpty() and (enterVariableKosten.text.toString().isNotEmpty())) {
@@ -33,4 +33,5 @@ class DeckungsbetragActivity : AppCompatActivity() {
 
         }
     }
+
 }
