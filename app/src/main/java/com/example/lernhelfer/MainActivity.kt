@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         listView1.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
             when (position) {
                 0 -> startActivity(Intent(this@MainActivity, BezugspreisActivity::class.java))
-                1 -> startActivity(Intent(this@MainActivity, DeckungspreisActivity::class.java))
+                1 -> startActivity(Intent(this@MainActivity, DeckungsbeitragActivity::class.java))
                 2 -> startActivity(Intent(this@MainActivity, TausenderpreisActivity::class.java))
                 3 -> startActivity(Intent(this@MainActivity, OrangeActivity::class.java))
                 // Add more cases for other positions if needed
