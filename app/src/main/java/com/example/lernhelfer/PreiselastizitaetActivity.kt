@@ -29,7 +29,7 @@ class PreiselastizitaetActivity : AppCompatActivity() {
 
         calculateButton.setOnClickListener {
             if (enterNeueMenge.text.toString().isNotEmpty() and enterAlteMenge.text.toString().isNotEmpty() and enterNeuerPreis.text.toString().isNotEmpty() and enterAlterPreis.text.toString().isNotEmpty()) {
-                val preiselastizitaet = ((enterNeueMenge.text.toString().toDouble() - enterAlteMenge.text.toString().toDouble()) / enterAlteMenge.text.toString().toDouble()) / ((enterNeuerPreis.text.toString().toDouble() - enterAlterPreis.text.toString().toDouble()) / enterAlterPreis.text.toString().toDouble())
+                var preiselastizitaet = ((enterNeueMenge.text.toString().toDouble() - enterAlteMenge.text.toString().toDouble()) / enterAlteMenge.text.toString().toDouble()) / ((enterNeuerPreis.text.toString().toDouble() - enterAlterPreis.text.toString().toDouble()) / enterAlterPreis.text.toString().toDouble())
                 preiselastizitaet *= -1
                 textViewResult.text = String.format("%.2f", preiselastizitaet) + " €"
             } else {
