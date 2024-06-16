@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#760CA9F0">
+
+    <!-- Text "Preiselastizitaet" -->
+    <TextView
+        android:id="@+id/textPreiselastizität"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Preiselastizitaet"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <!-- Eingabefeld für Neue Menge -->
+    <EditText
+        android:id="@+id/editNeueMenge"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textPreiselastizitaet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:hint="NeueMenge" />
+
+    <!-- Eingabefeld für alte Menge-->
+    <EditText
+        android:id="@+id/editAlteMenge"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editNeueMenge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:hint="Alte Menge" />
+
+    <!-- Eingabefeld für neuer Preis-->
+    <EditText
+        android:id="@+id/editNeuerPreis"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editAlteMenge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:hint="Neuer Preis" />
+
+    <!-- Eingabefeld für alter Preis-->
+    <EditText
+        android:id="@+id/editAlterPreis"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editNeuerPreis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:hint="Alter Preis" />
+
+
+    <!-- Berechnen Button -->
+    <Button
+        android:id="@+id/buttonBerechnen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editAlterPreis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="Berechnen" />
+
+    <!-- Ausgabefeld 1 -->
+    <TextView
+        android:id="@+id/textAusgabe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonBerechnen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="..."
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <!-- Formel und Erklärung -->
+    <TextView
+        android:id="@+id/formel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textAusgabe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Preiselastizitaet = ((Neue Menge - alte Menge) / alte Menge) / ((neuer Preis - alter Preis) / alter Preis) \n
+         Die Preiselastizitaet steht dafür, wie empfindlich Kunden auf Preisschwankungen reagieren. Je staerker die Aenderung ausfaellt, desto groeßer ist die Preiselastizitaet. "
+        android:textSize="18sp" />
+
+</RelativeLayout>
