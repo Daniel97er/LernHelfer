@@ -18,7 +18,7 @@ class PreiselastizitaetActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_preiselastizität)
+        setContentView(R.layout.activity_preiselastizitaet)
 
         enterNeueMenge = findViewById(R.id.editNeueMenge)
         enterAlteMenge = findViewById(R.id.editAlteMenge)
