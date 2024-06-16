@@ -14,6 +14,8 @@
             tools:ignore="MissingClass"></activity>
         <activity android:name=".DeckungsbeitragActivity"
             tools:ignore="MissingClass"></activity>
+        <activity android:name=".PreiselastizitaetActivity"
+            tools:ignore="MissingClass"></activity>
         <activity android:name=".OrangeActivity"
             tools:ignore="MissingClass"></activity>
         <activity android:name=".TausenderpreisActivity"
