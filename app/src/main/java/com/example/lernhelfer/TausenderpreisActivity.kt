@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 class TausenderpreisActivity : AppCompatActivity() {
     private lateinit var enterWerbepreis: EditText
-    private lateinit var enterBruttoreichweite: EditText
+    private lateinit var enterBruttoreichweite: EditTextä
     private lateinit var calculateButton: Button
     private lateinit var textViewResult: TextView
 
