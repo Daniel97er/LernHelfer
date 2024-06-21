@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         val listView1: ListView = findViewById(R.id.listview1)
         val listView2: ListView = findViewById(R.id.listview2)
 
-        val list1 = listOf("Bezugspreiskalkulation", "Deckungsbeitrag", "Preiselastizitaet", "Tausenderpreis")
+        val list1 = listOf("Bezugspreiskalkulation", "Deckungsbeitrag", "Preiselastizitaet", "Tausenderpreis", "Tausenderpreis(Qualitativ)")
         val list2 = listOf("anne", "paul", "peter")
 
         val arrayAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, list1)
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
                 1 -> startActivity(Intent(this@MainActivity, DeckungsbeitragActivity::class.java))
                 2 -> startActivity(Intent(this@MainActivity, PreiselastizitaetActivity::class.java))
                 3 -> startActivity(Intent(this@MainActivity, TausenderpreisActivity::class.java))
-                4 -> startActivity(Intent(this@MainActivity, OrangeActivity::class.java))
+                4 -> startActivity(Intent(this@MainActivity, Tausenderpreis_Qualitativ_Activity::class.java))
                 // Add more cases for other positions if needed
             }
         }
@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         listView2.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
             when (position) {
                 0 -> startActivity(Intent(this@MainActivity, TausenderpreisActivity::class.java))
-                1 -> startActivity(Intent(this@MainActivity, OrangeActivity::class.java))
+                1 -> startActivity(Intent(this@MainActivity, Tausenderpreis_Qualitativ_Activity::class.java))
                 // Add more cases for other positions if needed
             }
         }

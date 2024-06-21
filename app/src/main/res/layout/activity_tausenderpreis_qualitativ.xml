@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#760CA9F0">
+
+    <!-- Text "Tausenderpreis qualitativ" -->
+    <TextView
+        android:id="@+id/textTausenderpreis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Tausenderpreis (Qualitativ)"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <!-- Eingabefeld für Werbepreis -->
+    <EditText
+        android:id="@+id/editWerbepreis"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTausenderpreis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:hint="Preis je Seite" />
+
+    <!-- Eingabefeld für Bruttoreichweite -->
+    <EditText
+        android:id="@+id/editBruttoreichweite"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editWerbepreis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:hint="Anzahl der tatsaechlichen Leser" />
+
+    <!-- Größerer Button -->
+    <Button
+        android:id="@+id/buttonBerechnen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editBruttoreichweite"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="Berechnen" />
+
+    <!-- Ausgabefeld -->
+    <TextView
+        android:id="@+id/textAusgabe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonBerechnen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="..."
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Formel und Erklärung -->
+    <TextView
+        android:id="@+id/formel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textAusgabe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Werbepreis/Nettoreichweite x 1.000"
+        android:textSize="18sp" />
+
+</RelativeLayout>
