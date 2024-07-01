@@ -10,7 +10,7 @@ class TausenderpreisActivity : AppCompatActivity() {
     private lateinit var enterWerbepreis: EditText
     private lateinit var enterBruttoreichweite: EditText
     private lateinit var calculateButton: Button
-    private lateinit var textViewResult: TextViewwv
+    private lateinit var textViewResult: TextVieww
 
 
 
