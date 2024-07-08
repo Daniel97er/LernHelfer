@@ -18,6 +18,8 @@
             tools:ignore="MissingClass"></activity>
         <activity android:name=".Tausenderpreis_Qualitativ_Activity"
             tools:ignore="MissingClass"></activity>
+        <activity android:name=".PreiselastizitaettActivity"
+            tools:ignore="MissingClass"></activity>
         <activity android:name=".TausenderpreisActivity"
             tools:ignore="MissingClass" />
         <activity android:name=".MainActivity"
