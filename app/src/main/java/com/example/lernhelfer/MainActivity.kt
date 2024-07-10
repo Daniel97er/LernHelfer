@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         val listView2: ListView = findViewById(R.id.listview2)
 
         val list1 = listOf("Bezugspreiskalkulation", "Deckungsbeitrag", "Preiselastizitaet", "Tausenderpreis", "Tausenderpreis(Qualitativ)", "Eigenkapitalrendite")
-        val list2 = listOf("anne", "paul", "peter")
+        val list2 = listOf("Mol berechnen", "Stoffmengenkonzentration", "Dichte berechnen")
 
         val arrayAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, list1)
         listView1.adapter = arrayAdapter
