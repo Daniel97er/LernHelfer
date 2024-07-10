@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
                 2 -> startActivity(Intent(this@MainActivity, PreiselastizitaetActivity::class.java))
                 3 -> startActivity(Intent(this@MainActivity, TausenderpreisActivity::class.java))
                 4 -> startActivity(Intent(this@MainActivity, Tausenderpreis_Qualitativ_Activity::class.java))
-                5 -> startActivity(Intent(this@MainActivity, EigenkapitalrenditeActivity::class.java))
+                5 -> startActivity(Intent(this@MainActivity, Eigenkapitalrendite_Activity::class.java))
                 // Add more cases for other positions if needed
             }
         }
