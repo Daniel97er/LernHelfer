@@ -18,14 +18,14 @@ class EigenkapitalrenditeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tausenderpreis)
 
-        enterWerbepreis = findViewById(R.id.editWerbepreis)
-        enterBruttoreichweite = findViewById(R.id.editBruttoreichweite)
+        enterGewinn = findViewById(R.id.editWerbepreis)
+        enterEigenkapital = findViewById(R.id.editBruttoreichweite)
         calculateButton = findViewById(R.id.buttonBerechnen)
         textViewResult = findViewById(R.id.textAusgabe)
 
         calculateButton.setOnClickListener {
-            if (enterWerbepreis.text.toString().isNotEmpty() and enterBruttoreichweite.text.toString().isNotEmpty())  {
-                val result = (enterWerbepreis.text.toString().toDouble() / enterBruttoreichweite.text.toString().toDouble()) * 1000
+            if (enterGewinn.text.toString().isNotEmpty() and enterEigenkapital.text.toString().isNotEmpty())  {
+                val result = (enterGewinn.text.toString().toDouble() / enterEigenkapital.text.toString().toDouble()) * 100
                 textViewResult.text = String.format("%.2f", result) + " €"
             } else {
                 textViewResult.text = "Bitte überprüfen Sie ihre Eingabe"
