@@ -16,10 +16,10 @@ class EigenkapitalrenditeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tausenderpreis)
+        setContentView(R.layout.activity_eigenkapitalrendite)
 
-        enterGewinn = findViewById(R.id.editWerbepreis)
-        enterEigenkapital = findViewById(R.id.editBruttoreichweite)
+        enterGewinn = findViewById(R.id.editGewinn)
+        enterEigenkapital = findViewById(R.id.editEigenkapital)
         calculateButton = findViewById(R.id.buttonBerechnen)
         textViewResult = findViewById(R.id.textAusgabe)
 
