@@ -18,7 +18,7 @@
             tools:ignore="MissingClass"></activity>
         <activity android:name=".Tausenderpreis_Qualitativ_Activity"
             tools:ignore="MissingClass"></activity>
-        <activity android:name=".NullstellenActivity"
+        <activity android:name=".EigenkapitalrenditeActivity"
             tools:ignore="MissingClass"></activity>
         <activity android:name=".TausenderpreisActivity"
             tools:ignore="MissingClass" />
