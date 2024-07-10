@@ -33,7 +33,7 @@
         android:layout_below="@id/editGewinn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
-        android:hint="Anzahl der Leser" />
+        android:hint="Eigenkapital" />
 
     <!-- Größerer Button -->
     <Button
