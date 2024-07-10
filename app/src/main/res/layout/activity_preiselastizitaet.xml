@@ -87,8 +87,19 @@
         android:layout_below="@id/textAusgabe"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
-        android:text="Preiselastizitaet = ((Neue Menge - alte Menge) / alte Menge) / ((neuer Preis - alter Preis) / alter Preis) \n
-         Die Preiselastizitaet steht dafür, wie empfindlich Kunden auf Preisschwankungen reagieren. Je staerker die Aenderung ausfaellt, desto groeßer ist die Preiselastizitaet. "
+        android:text="Preiselastizitaet = ((Neue Menge - alte Menge) / alte Menge) / ((neuer Preis - alter Preis) / alter Preis)"
         android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textMadeBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Made by D.S."
+        android:textSize="14sp"
+        android:textStyle="italic" />
 
 </RelativeLayout>
