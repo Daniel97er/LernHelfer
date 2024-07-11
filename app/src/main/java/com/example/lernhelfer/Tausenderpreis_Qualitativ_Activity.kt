@@ -16,7 +16,7 @@ class Tausenderpreis_Qualitativ_Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tausenderpreis)
+        setContentView(R.layout.activity_tausenderpreis_qualitativ)
 
         enterWerbepreis = findViewById(R.id.editWerbepreis)
         enterBruttoreichweite = findViewById(R.id.editBruttoreichweite)

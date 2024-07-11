@@ -65,7 +65,7 @@
         android:layout_below="@id/textAusgabe"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
-        android:text="Werbepreis/Nettoreichweite x 1.000"
+        android:text="Werbepreis / Nettoreichweite x 1.000"
         android:textSize="18sp" />
 
     <TextView

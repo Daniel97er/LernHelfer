@@ -18,7 +18,7 @@
     <!-- Eingabefeld für Listeneinkaufspreispreis -->
     <EditText
         android:id="@+id/editListeneinkaufspreis"
-        android:layout_width="200dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/textBezugspreispreis"
         android:layout_centerHorizontal="true"
@@ -28,7 +28,7 @@
     <!-- Eingabefeld für Lieferantenrabatt -->
     <EditText
         android:id="@+id/editLieferantenrabatt"
-        android:layout_width="200dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/editListeneinkaufspreis"
         android:layout_centerHorizontal="true"
@@ -38,7 +38,7 @@
     <!-- Eingabefeld für Lieferantenskonti -->
     <EditText
         android:id="@+id/editLieferantenskonti"
-        android:layout_width="200dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/editLieferantenrabatt"
         android:layout_centerHorizontal="true"
@@ -48,7 +48,7 @@
     <!-- Eingabefeld für Bezugskosten -->
     <EditText
         android:id="@+id/editBezugskosten"
-        android:layout_width="200dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/editLieferantenskonti"
         android:layout_centerHorizontal="true"
