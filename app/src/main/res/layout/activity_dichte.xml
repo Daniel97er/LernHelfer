@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#760CA9F0">
+
+    <!-- Text "Dichte" -->
+    <TextView
+        android:id="@+id/textDichte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Dichte"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <!-- Eingabefeld für Masse -->
+    <EditText
+        android:id="@+id/editMasse"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDichte"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:hint="Masse" />
+
+    <!-- Eingabefeld Volumen -->
+    <EditText
+        android:id="@+id/editVolumen"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editMasse"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:hint="Volumen" />
+
+    <!-- Berechnen Button -->
+    <Button
+        android:id="@+id/buttonBerechnen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editVolumen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="Berechnen" />
+
+    <!-- Ausgabefeld 1 -->
+    <TextView
+        android:id="@+id/textAusgabe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonBerechnen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="..."
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <!-- Formel und Erklärung -->
+    <TextView
+        android:id="@+id/formel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textAusgabe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Dichte = Masse / Volumen"
+        android:textSize="18sp" />
+
+</RelativeLayout>
