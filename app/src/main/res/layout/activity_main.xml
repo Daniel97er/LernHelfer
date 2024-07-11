@@ -36,7 +36,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:text="Chemie"
-        android:textColor="#37E121"
+        android:textColor="#90EE90"
         android:textSize="20sp" />
 
     <!-- Zweite Liste -->
@@ -47,7 +47,7 @@
         android:layout_below="@id/aboveSecondListText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:background="#37E121" />
+        android:background="#90EE90" />
 
     <TextView
         android:id="@+id/textMadeBy"
