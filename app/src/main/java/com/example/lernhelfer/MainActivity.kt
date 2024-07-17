@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         listView2.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
             when (position) {
                 0 -> startActivity(Intent(this@MainActivity, DichteActivity::class.java))
-                1 -> startActivity(Intent(this@MainActivity, Stoffmenge_Activity::class.java))
+                1 -> startActivity(Intent(this@MainActivity, StoffmengeActivity::class.java))
                 // Add more cases for other positions if needed
             }
         }
