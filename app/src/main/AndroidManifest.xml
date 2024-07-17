@@ -19,6 +19,8 @@
             tools:ignore="MissingClass"></activity>
         <activity android:name=".PreiselastizitaetActivity"
             tools:ignore="MissingClass"></activity>
+        <activity android:name=".StoffmengeActivity"
+            tools:ignore="MissingClass"></activity>
         <activity android:name=".Tausenderpreis_Qualitativ_Activity"
             tools:ignore="MissingClass"></activity>
         <activity android:name=".EigenkapitalrenditeActivity"
