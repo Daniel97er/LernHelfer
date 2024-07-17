@@ -26,7 +26,7 @@ class StoffmengeActivity : AppCompatActivity() {
         calculateButton.setOnClickListener {
             if (enterMasse.text.toString().isNotEmpty() and enterMolmasse.text.toString().isNotEmpty()) {
                 val result = (enterMasse.text.toString().toDouble() / enterMolmasse.text.toString().toDouble())
-                    textViewResult.text = String.format("%.2f", result)
+                    textViewResult.text = String.format("%.2f", result) + "Mol"
             } else {
                 textViewResult.text = "Bitte überprüfen Sie ihre Eingaben"
             }
