@@ -67,7 +67,7 @@
 
     <!-- Ausgabefeld 1 -->
     <TextView
-        android:id="@+id/textAusgabe"
+        android:id="@+id/textAusgabe1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/buttonBerechnen"
@@ -78,15 +78,16 @@
         android:textStyle="bold" />
 
 
-    <!-- Formel und Erklärung -->
+    <!-- Ausgabefeld 2 -->
     <TextView
-        android:id="@+id/formel"
+        android:id="@+id/textAusgabe2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textAusgabe"
+        android:layout_below="@+id/textAusgabe1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
-        android:text="Nullstellen Algorithmus"
-        android:textSize="18sp" />
+        android:text="..."
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

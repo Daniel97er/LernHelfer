@@ -75,7 +75,8 @@ class NullstelleActivity : AppCompatActivity() {
                 }
                 val roots = solveCubic(a.text.toString().toDouble(), b.text.toString().toDouble(), c.text.toString().toDouble(), d.text.toString().toDouble())
 
-                textViewResult.text = String.format("%.2f", roots)
+                textViewResult.text = String.format("%.2f", roots[0])
+                textViewResult.text = String.format("%.2f", roots[1])
             } else {
                 textViewResult.text = "Bitte überprüfen Sie ihre Eingaben"
             }
