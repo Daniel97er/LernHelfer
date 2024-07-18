@@ -20,7 +20,7 @@ class NullstelleActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_nullstellen)
+        setContentView(R.layout.activity_nullstelle)
 
         a = findViewById(R.id.editA)
         b = findViewById(R.id.editB)
