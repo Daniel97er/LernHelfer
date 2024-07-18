@@ -32,7 +32,7 @@ class NullstelleActivity : AppCompatActivity() {
 
         calculateButton.setOnClickListener {
             if (a.text.toString().isNotEmpty() and b.text.toString().isNotEmpty() and c.text.toString().isNotEmpty() and d.text.toString().isNotEmpty()) {
-                fun solveCubic(a.text.toString().toDouble(): Double, b.text.toString().toDouble(): Double, c.text.toString().toDouble(): Double, d.text.toString().toDouble(): Double): List<Double> {
+                fun solveCubic(a: Double, b: Double, c: Double, d: Double): List<Double> {
                     // Umwandlung in die reduzierte kubische Gleichung t^3 + pt + q = 0
                     val f = ((3.0 * c / a) - ((b * b) / (a * a))) / 3.0
                     val g = ((2.0 * b * b * b) / (a * a * a) - (9.0 * b * c) / (a * a) + (27.0 * d / a)) / 27.0
@@ -73,7 +73,7 @@ class NullstelleActivity : AppCompatActivity() {
                 fun cbrt(x: Double): Double {
                     return if (x < 0) -(-x).pow(1.0 / 3.0) else x.pow(1.0 / 3.0)
                 }
-                val roots = solveCubic(a, b, c, d)
+                val roots = solveCubic(a.text.toString().toDouble(), b.text.toString().toDouble(), c.text.toString().toDouble(), d.text.toString().toDouble())
 
                 textViewResult.text = String.format("%.2f", roots)
             } else {
