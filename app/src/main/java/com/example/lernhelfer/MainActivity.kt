@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         val listView2: ListView = findViewById(R.id.listview2)
 
         val list1 = listOf("Bezugspreiskalkulation", "Deckungsbeitrag", "Preiselastizitaet", "Tausenderpreis", "Tausenderpreis(Qualitativ)", "Eigenkapitalrendite")
-        val list2 = listOf("Dichte", "Stoffmenge", "Dichte berechnen")
+        val list2 = listOf("Dichte", "Stoffmenge", "Nullstellen")
 
         val arrayAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, list1)
         listView1.adapter = arrayAdapter
@@ -43,6 +43,7 @@ class MainActivity : AppCompatActivity() {
             when (position) {
                 0 -> startActivity(Intent(this@MainActivity, DichteActivity::class.java))
                 1 -> startActivity(Intent(this@MainActivity, StoffmengeActivity::class.java))
+                2 -> startActivity(Intent(this@MainActivity, NullstelleActivity::class.java))
                 // Add more cases for other positions if needed
             }
         }

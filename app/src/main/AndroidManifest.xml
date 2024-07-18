@@ -17,6 +17,8 @@
             tools:ignore="MissingClass"></activity>
         <activity android:name=".DichteActivity"
             tools:ignore="MissingClass"></activity>
+        <activity android:name=".NullstelleActivity"
+            tools:ignore="MissingClass"></activity>
         <activity android:name=".PreiselastizitaetActivity"
             tools:ignore="MissingClass"></activity>
         <activity android:name=".StoffmengeActivity"

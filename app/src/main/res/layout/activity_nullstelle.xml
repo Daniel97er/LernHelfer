@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#760CA9F0">
+
+    <!-- Text "Nullstelle" -->
+    <TextView
+        android:id="@+id/textNullstelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Nullstelle"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <!-- Eingabefeld für Koeffizient vor X³ -->
+    <EditText
+        android:id="@+id/editA"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textNullstelle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:hint="Koeffizient vor X³" />
+
+    <!-- Eingabefeld für Koeffizient vor X² -->
+    <EditText
+        android:id="@+id/editB"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editA"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:hint="Koeffizient vor X²" />
+
+    <!-- Eingabefeld für Koeffizient vor X¹ -->
+    <EditText
+        android:id="@+id/editC"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:hint="Koeffizient vor X¹" />
+
+    <!-- Eingabefeld für letzten Koeffizient -->
+    <EditText
+        android:id="@+id/editD"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:hint="Letzter Koeffizient" />
+
+    <!-- Berechnen Button -->
+    <Button
+        android:id="@+id/buttonBerechnen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="Berechnen" />
+
+    <!-- Ausgabefeld 1 -->
+    <TextView
+        android:id="@+id/textAusgabe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonBerechnen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="..."
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <!-- Formel und Erklärung -->
+    <TextView
+        android:id="@+id/formel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textAusgabe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Nullstellen Algorithmus"
+        android:textSize="18sp" />
+
+</RelativeLayout>
