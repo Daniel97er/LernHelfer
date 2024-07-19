@@ -17,15 +17,20 @@ class MainActivity : AppCompatActivity() {
 
         val listView1: ListView = findViewById(R.id.listview1)
         val listView2: ListView = findViewById(R.id.listview2)
+        val listView3: ListView = findViewById(R.id.listview3)
 
         val list1 = listOf("Bezugspreiskalkulation", "Deckungsbeitrag", "Preiselastizitaet", "Tausenderpreis", "Tausenderpreis(Qualitativ)", "Eigenkapitalrendite")
-        val list2 = listOf("Dichte", "Stoffmenge", "Nullstellen")
+        val list2 = listOf("Dichte", "Stoffmenge")
+        val list3 = listOf("Nullstellen")
 
         val arrayAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, list1)
         listView1.adapter = arrayAdapter
 
         val arrayAdapter2 = ArrayAdapter(this, android.R.layout.simple_list_item_1, list2)
         listView2.adapter = arrayAdapter2
+
+        val arrayAdapter3 = ArrayAdapter(this, android.R.layout.simple_list_item_1, list3)
+        listView3.adapter = arrayAdapter3
 
         listView1.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
             when (position) {
@@ -44,6 +49,13 @@ class MainActivity : AppCompatActivity() {
                 0 -> startActivity(Intent(this@MainActivity, DichteActivity::class.java))
                 1 -> startActivity(Intent(this@MainActivity, StoffmengeActivity::class.java))
                 2 -> startActivity(Intent(this@MainActivity, NullstelleActivity::class.java))
+                // Add more cases for other positions if needed
+            }
+        }
+
+        listView3.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
+            when (position) {
+                0 -> startActivity(Intent(this@MainActivity, NullstelleActivity::class.java))
                 // Add more cases for other positions if needed
             }
         }

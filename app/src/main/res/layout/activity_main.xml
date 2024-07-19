@@ -49,6 +49,29 @@
         android:layout_marginTop="16dp"
         android:background="#90EE90" />
 
+
+    <!-- Text über der dritten Liste -->
+    <TextView
+        android:id="@+id/aboveThirdListText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listview2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Mathe"
+        android:textColor="#0000FF"
+        android:textSize="20sp" />
+
+    <!-- Dritte Liste -->
+    <ListView
+        android:id="@+id/listview3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aboveThirdListText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="#0000FF" />
+
     <TextView
         android:id="@+id/textMadeBy"
         android:layout_width="wrap_content"
@@ -58,6 +81,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:text="Made by D.S."
-        android:textSize="14sp"
+        android:textSize="23sp"
+        android:textColor="#0088ff"
         android:textStyle="italic" />
 </RelativeLayout>
