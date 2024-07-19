@@ -14,7 +14,9 @@ class NullstelleActivity : AppCompatActivity() {
     private lateinit var c: EditText
     private lateinit var d: EditText
     private lateinit var calculateButton: Button
-    private lateinit var textViewResult: TextView
+    private lateinit var textViewResult1: TextView
+    private lateinit var textViewResult2: TextView
+    private lateinit var textViewResult3: TextView
 
 
 
@@ -28,7 +30,9 @@ class NullstelleActivity : AppCompatActivity() {
         d = findViewById(R.id.editD)
 
         calculateButton = findViewById(R.id.buttonBerechnen)
-        textViewResult = findViewById(R.id.textAusgabe)
+        textViewResult1 = findViewById(R.id.textAusgabe1)
+        textViewResult2 = findViewById(R.id.textAusgabe2)
+        textViewResult3 = findViewById(R.id.textAusgabe3)
 
         calculateButton.setOnClickListener {
             if (a.text.toString().isNotEmpty() and b.text.toString().isNotEmpty() and c.text.toString().isNotEmpty() and d.text.toString().isNotEmpty()) {
@@ -75,10 +79,13 @@ class NullstelleActivity : AppCompatActivity() {
                 }
                 val roots = solveCubic(a.text.toString().toDouble(), b.text.toString().toDouble(), c.text.toString().toDouble(), d.text.toString().toDouble())
 
-                textViewResult.text = String.format("%.2f", roots[0])
-                textViewResult.text = String.format("%.2f", roots[1])
+                textViewResult1.text = if (roots.isNotEmpty()) String.format("%.2f", roots[0]) else ""
+                textViewResult2.text = if (roots.size > 1) String.format("%.2f", roots[1]) else ""
+                textViewResult3.text = if (roots.size > 2) String.format("%.2f", roots[2]) else ""
             } else {
-                textViewResult.text = "Bitte überprüfen Sie ihre Eingaben"
+                textViewResult1.text = "Bitte überprüfen Sie ihre Eingaben"
+                textViewResult2.text = ""
+                textViewResult3.text = ""
             }
 
         }

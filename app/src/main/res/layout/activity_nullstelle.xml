@@ -90,4 +90,17 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
+
+    <!-- Ausgabefeld 3 -->
+    <TextView
+        android:id="@+id/textAusgabe3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAusgabe2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="..."
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
 </RelativeLayout>
