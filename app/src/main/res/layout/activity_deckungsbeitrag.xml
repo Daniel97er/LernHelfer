@@ -79,7 +79,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:text="Made by D.S."
-        android:textSize="14sp"
+        android:textSize="23sp"
         android:textStyle="italic" />
 
 </RelativeLayout>
