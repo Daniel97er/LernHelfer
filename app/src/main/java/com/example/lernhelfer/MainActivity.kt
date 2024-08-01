@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)fr
+        setContentView(R.layout.activity_main)
 
         val listView1: ListView = findViewById(R.id.listview1)
         val listView2: ListView = findViewById(R.id.listview2)
