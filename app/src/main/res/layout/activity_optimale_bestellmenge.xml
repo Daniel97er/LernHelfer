@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#760CA9F0">
+
+    <!-- Text "Optimale Bestellmenge" -->
+    <TextView
+        android:id="@+id/textOptimale_Bestellmenge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Optimale Bestellmenge"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <!-- Eingabefeld für Bestellfixe Kosten-->
+    <EditText
+        android:id="@+id/editBestellfixeKosten"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textOptimale_Bestellmenge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:hint="Bestellfixe Kosten" />
+
+    <!-- Eingabefeld für Jahresverbrauchsmenge-->
+    <EditText
+        android:id="@+id/editJahresverbrauchsmenge"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editBestellfixeKosten"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:hint="Jahresverbrauchsmenge" />
+
+    <!-- Eingabefeld für neuer Bezugspreis-->
+    <EditText
+        android:id="@+id/editBezugspreis"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editJahresverbrauchsmenge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:hint="Bezugspreis pro Stück" />
+
+    <!-- Eingabefeld für Lagerkostensatz-->
+    <EditText
+        android:id="@+id/editLagerkostensatz"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editBezugspreis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:hint="Lagerkostensatz" />
+
+
+    <!-- Berechnen Button -->
+    <Button
+        android:id="@+id/buttonBerechnen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editAlterPreis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="Berechnen" />
+
+    <!-- Ausgabefeld 1 -->
+    <TextView
+        android:id="@+id/textAusgabe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonBerechnen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="..."
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <!-- Formel und Erklärung -->
+    <TextView
+        android:id="@+id/formel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textAusgabe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Optimale Bestellmenge = Wurzel((200 x Bestellfixe Kosten x Jahresverbrauchsmenge) / (Bezugspreis pro Stück x Lagerkostensatz))"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textMadeBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Made by D.S."
+        android:textSize="23sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>
