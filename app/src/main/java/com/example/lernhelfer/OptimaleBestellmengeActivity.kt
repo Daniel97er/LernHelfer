@@ -5,6 +5,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import kotlin.math.sqrt
 
 class OptimaleBestellmengeActivity : AppCompatActivity() {
     private lateinit var enterBestellfixeKosten: EditText
@@ -29,9 +30,8 @@ class OptimaleBestellmengeActivity : AppCompatActivity() {
 
         calculateButton.setOnClickListener {
             if (enterBestellfixeKosten.text.toString().isNotEmpty() and enterJahresverbrauchsmenge.text.toString().isNotEmpty() and enterBezugspreis.text.toString().isNotEmpty() and enterLagerkostensatz.text.toString().isNotEmpty()) {
-                var Optimale_Bestellmenge = ((enterNeueMenge.text.toString().toDouble() - enterAlteMenge.text.toString().toDouble()) / enterAlteMenge.text.toString().toDouble()) / ((enterNeuerPreis.text.toString().toDouble() - enterAlterPreis.text.toString().toDouble()) / enterAlterPreis.text.toString().toDouble())
-                Optimale_Bestellmenge *= -1
-                textViewResult.text = String.format("%.2f", preiselastizitaet) + " €"
+                var Optimale_Bestellmenge = sqrt((200 * enterBestellfixeKosten.text.toString().toDouble() * enterJahresverbrauchsmenge.text.toString().toDouble()) / (enterBezugspreis.text.toString().toDouble() * enterLagerkostensatz.text.toString().toDouble()))
+                textViewResult.text = String.format("%.2f", Optimale_Bestellmenge) + " Stück"
             } else {
                 textViewResult.text = "Bitte überprüfen Sie ihre Eingaben"
             }
