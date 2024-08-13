@@ -87,8 +87,9 @@
         android:layout_below="@id/textAusgabe"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
-        android:text="Optimale Bestellmenge = Wurzel((200 x Bestellfixe Kosten x Jahresverbrauchsmenge) / (Bezugspreis pro Stück x Lagerkostensatz))"
-        android:textSize="18sp" />
+        android:text="Formel: Optimale Bestellmenge = \n√((200 x Bestellfixe Kosten x Jahresverbrauchsmenge) \n/ (Bezugspreis pro Stück x Lagerkostensatz)) \n\nErklärung: Die optimale Bestellmenge ist die Menge an Produkten oder Rohstoffen, die ein Unternehmen bestellen sollte, um die Gesamtkosten zu minimieren."
+        android:textSize="18sp"
+        android:gravity="center" />
 
     <TextView
         android:id="@+id/textMadeBy"
