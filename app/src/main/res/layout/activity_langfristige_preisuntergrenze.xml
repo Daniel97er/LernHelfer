@@ -1,6 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#760CA9F0">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Text "Langfristige Preisuntergrenzen" -->
+    <TextView
+        android:id="@+id/textLangfristige_Preisuntergrenze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Langfristige Preisuntergrenze"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <!-- Eingabefeld für Fixkosten-->
+    <EditText
+        android:id="@+id/editFixkosten"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textLangfristige_Preisuntergrenze"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:hint="Fixkosten" />
+
+    <!-- Eingabefeld für Produktionsmenge -->
+    <EditText
+        android:id="@+id/editProduktionsmenge"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editFixkosten"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:hint="Produktionsmenge" />
+
+    <!-- Eingabefeld für variable Kosten-->
+    <EditText
+        android:id="@+id/editVariableKosten"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editProduktionsmenge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:hint="Variable Kosten pro Einheit" />
+
+
+    <!-- Berechnen Button -->
+    <Button
+        android:id="@+id/buttonBerechnen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editVariableKosten"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="Berechnen" />
+
+    <!-- Ausgabefeld 1 -->
+    <TextView
+        android:id="@+id/textAusgabe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonBerechnen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="..."
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <!-- Formel und Erklärung -->
+    <TextView
+        android:id="@+id/formel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textAusgabe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Langfristige Preisuntergrenze = (Fixkosten / Produktionsmenge) + variable Kosten pro Einheit"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textMadeBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Made by D.S."
+        android:textSize="23sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>
