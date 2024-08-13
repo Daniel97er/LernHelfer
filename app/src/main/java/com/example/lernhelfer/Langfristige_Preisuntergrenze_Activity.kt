@@ -27,9 +27,8 @@ class Langfristige_Preisuntergrenze_Activity : AppCompatActivity() {
 
         calculateButton.setOnClickListener {
             if (enterFixkosten.text.toString().isNotEmpty() and enterProduktionsmenge.text.toString().isNotEmpty() and enterVariableKosten.text.toString().isNotEmpty()) {
-                var Optimale_Bestellmenge = ((enterNeueMenge.text.toString().toDouble() - enterAlteMenge.text.toString().toDouble()) / enterAlteMenge.text.toString().toDouble()) / ((enterNeuerPreis.text.toString().toDouble() - enterAlterPreis.text.toString().toDouble()) / enterAlterPreis.text.toString().toDouble())
-                Optimale_Bestellmenge *= -1
-                textViewResult.text = String.format("%.2f", preiselastizitaet) + " €"
+                var Langfristige_Preisuntergrenze = ((enterFixkosten.text.toString().toDouble() / enterProduktionsmenge.text.toString().toDouble()) + enterVariableKosten.text.toString().toDouble())
+                textViewResult.text = String.format("%.2f", Langfristige_Preisuntergrenze) + " €"
             } else {
                 textViewResult.text = "Bitte überprüfen Sie ihre Eingaben"
             }
