@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         val listView2: ListView = findViewById(R.id.listview2)
         val listView3: ListView = findViewById(R.id.listview3)
 
-        val list1 = listOf("Bezugspreiskalkulation", "Deckungsbeitrag", "Optimale Bestellmenge", "Preiselastizitaet", "Tausenderpreis", "Tausenderpreis(Qualitativ)", "Eigenkapitalrendite")
+        val list1 = listOf("Bezugspreiskalkulation", "Deckungsbeitrag", "Langfristige Preisuntergrenze", "Optimale Bestellmenge", "Preiselastizitaet", "Tausenderpreis", "Tausenderpreis(Qualitativ)", "Eigenkapitalrendite")
         val list2 = listOf("Dichte", "Stoffmenge")
         val list3 = listOf("Nullstellen")
 
@@ -36,11 +36,12 @@ class MainActivity : AppCompatActivity() {
             when (position) {
                 0 -> startActivity(Intent(this@MainActivity, BezugspreisActivity::class.java))
                 1 -> startActivity(Intent(this@MainActivity, DeckungsbeitragActivity::class.java))
-                2 -> startActivity(Intent(this@MainActivity, OptimaleBestellmengeActivity::class.java))
-                3 -> startActivity(Intent(this@MainActivity, PreiselastizitaetActivity::class.java))
-                4 -> startActivity(Intent(this@MainActivity, TausenderpreisActivity::class.java))
-                5 -> startActivity(Intent(this@MainActivity, Tausenderpreis_Qualitativ_Activity::class.java))
-                6 -> startActivity(Intent(this@MainActivity, EigenkapitalrenditeActivity::class.java))
+                2 -> startActivity(Intent(this@MainActivity, Langfristige_Preisuntergrenze_Activity::class.java))
+                3 -> startActivity(Intent(this@MainActivity, OptimaleBestellmengeActivity::class.java))
+                4 -> startActivity(Intent(this@MainActivity, PreiselastizitaetActivity::class.java))
+                5 -> startActivity(Intent(this@MainActivity, TausenderpreisActivity::class.java))
+                6 -> startActivity(Intent(this@MainActivity, Tausenderpreis_Qualitativ_Activity::class.java))
+                7 -> startActivity(Intent(this@MainActivity, EigenkapitalrenditeActivity::class.java))
                 // Add more cases for other positions if needed
             }
         }
