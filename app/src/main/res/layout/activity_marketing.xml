@@ -1,0 +1,222 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Marketing"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.1 Grundlagen"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marketing bedeutet so viel wie 'vom Markt her handeln'. Marketing umfasst alle Maßnahmen, die ein Unternehmen ergreift, um sich Märkte zu schaffen. Das betrifft alle Abteilungen im Unternehmen."
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ein Käufermarkt ist eine Marktsituation, in der das Angebot die Nachfrage übersteigt. Käufer haben die Verhandlungsmacht, da es mehr Waren oder Dienstleistungen als Käufer gibt. Preise tendieren dazu, niedrig zu sein. Unternehmen müssen Marketing betreiben."
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ein Verkäufermarkt ist das Gegenteil: die Nachfrage übersteigt das Angebot. Verkäufer haben die Verhandlungsmacht, da es mehr Käufer als verfügbare Waren oder Dienstleistungen gibt. Preise tendieren dazu, hoch zu sein."
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Absatzwirtschaft bezieht sich auf alle Aktivitäten und Prozesse, die notwendig sind, um Produkte oder Dienstleistungen vom Hersteller zum Endverbraucher zu bringen. Dazu gehören Vertrieb, Logistik, Lagerhaltung und Verkaufsförderung."
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ökologische Nachhaltigkeit: Produkte und Prozesse werden so gestaltet, dass sie die Umwelt möglichst wenig belasten. Dies umfasst umweltfreundliche Produktion, nachhaltige Rohstoffbeschaffung und Minimierung von Abfall."
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soziale Nachhaltigkeit: Das Unternehmen übernimmt soziale Verantwortung, z.B. durch faire Arbeitsbedingungen, Unterstützung der lokalen Gemeinschaft und ethische Geschäftspraktiken."
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ökonomische Nachhaltigkeit: Langfristiger wirtschaftlicher Erfolg wird angestrebt, indem Ressourcen effizient genutzt und stabile, faire Beziehungen zu allen Stakeholdern gepflegt werden."
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Das Ziel ist es, nicht nur kurzfristige Gewinne zu maximieren, sondern langfristig einen positiven Einfluss auf Umwelt und Gesellschaft zu haben, während gleichzeitig wirtschaftlicher Erfolg gesichert wird."
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marketing - Kennzahlen"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marktpotenzial: Die maximale Aufnahmefähigkeit eines Marktes für ein Produkt, also die Gesamtzahl aller möglichen Käufe der Personen, die als Abnehmer infrage kommen."
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marktvolumen: Der tatsächliche Absatz auf einem Markt (Eigenes und alle anderen Unternehmen)."
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Absatzpotenzial: Der Teil am Marktpotenzial, den ein Unternehmen erreichen zu können glaubt."
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Absatzvolumen: Der tatsächliche Absatz des Unternehmens in Geld- oder Mengeneinheiten."
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marktanteil: Der prozentuale Anteil des Absatzes eines Unternehmens am Marktvolumen."
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marketinginstrumente (Marketingmix)"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Produkt- und Sortimentspolitik"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Preis- und Konditionenpolitik"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Distributionspolitik"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Kommunikationspolitik"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.2 Marketingziele und Marketingstrategien"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marketingziele können in quantitative und qualitative Ziele unterteilt werden und sollten nach dem SMART-Prinzip formuliert sein:"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMART-Prinzip:"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spezifisch: Klar und eindeutig formuliert."
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Messbar: Fortschritte und Zielerreichung müssen quantifizierbar sein."
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attraktiv: Ziel sollte motivierend und herausfordernd sein."
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Realistisch: Erreichbar und machbar."
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terminiert: Mit einer klaren Zeitvorgabe versehen."
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantitative Ziele sind messbare, numerische Ziele:"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Umsatzsteigerung um 10% in den nächsten 12 Monaten."
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Erhöhung des Marktanteils um 5% innerhalb eines Jahres."
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gewinnung von 1.000 neuen Kunden im nächsten Quartal."
+            android:paddingBottom="8dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

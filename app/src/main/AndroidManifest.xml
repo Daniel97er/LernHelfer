@@ -31,6 +31,8 @@
             tools:ignore="MissingClass"></activity>
         <activity android:name=".EigenkapitalrenditeActivity"
             tools:ignore="MissingClass"></activity>
+        <activity android:name=".MarketingActivity"
+            tools:ignore="MissingClass"></activity>
         <activity android:name=".TausenderpreisActivity"
             tools:ignore="MissingClass" />
         <activity android:name=".MainActivity"
