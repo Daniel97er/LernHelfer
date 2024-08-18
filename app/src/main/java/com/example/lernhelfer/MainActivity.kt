@@ -42,7 +42,6 @@ class MainActivity : AppCompatActivity() {
                 5 -> startActivity(Intent(this@MainActivity, TausenderpreisActivity::class.java))
                 6 -> startActivity(Intent(this@MainActivity, Tausenderpreis_Qualitativ_Activity::class.java))
                 7 -> startActivity(Intent(this@MainActivity, EigenkapitalrenditeActivity::class.java))
-                8 -> startActivity(Intent(this@MainActivity, MarketingActivity::class.java))
                 // Add more cases for other positions if needed
             }
         }
