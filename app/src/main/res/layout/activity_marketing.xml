@@ -1,361 +1,1524 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="16dp">
 
-        <!-- Hauptüberschrift: Marketing -->
+        <!-- Inhaltsverzeichnis -->
         <TextView
-            android:id="@+id/marketing_title"
+            android:id="@+id/section_inhaltsverzeichnis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inhaltsverzeichnis"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:id="@+id/link_section_1_1_grundlagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.1 Grundlagen der Marketingpolitik"
+            android:textColor="@android:color/holo_blue_dark"
+            android:clickable="true"
+            android:onClick="scrollToSection"
+            android:tag="@+id/section_1_1_grundlagen"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/link_section_1_2_marketingstrategien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.2 Marketingstrategien und -ziele"
+            android:textColor="@android:color/holo_blue_dark"
+            android:clickable="true"
+            android:onClick="scrollToSection"
+            android:tag="@+id/section_1_2_marketingstrategien"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/link_section_1_3_produktsortimentspolitik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.3 Produkt- und Sortimentspolitik"
+            android:textColor="@android:color/holo_blue_dark"
+            android:clickable="true"
+            android:onClick="scrollToSection"
+            android:tag="@+id/section_1_3_produktsortimentspolitik"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/link_section_1_4_preispolitik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.4 Preispolitik"
+            android:textColor="@android:color/holo_blue_dark"
+            android:clickable="true"
+            android:onClick="scrollToSection"
+            android:tag="@+id/section_1_4_preispolitik"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/link_section_1_5_distributionspolitik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.5 Distributionspolitik"
+            android:textColor="@android:color/holo_blue_dark"
+            android:clickable="true"
+            android:onClick="scrollToSection"
+            android:tag="@+id/section_1_5_distributionspolitik"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/link_section_1_6_kommunikationspolitik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.6 Kommunikationspolitik"
+            android:textColor="@android:color/holo_blue_dark"
+            android:clickable="true"
+            android:onClick="scrollToSection"
+            android:tag="@+id/section_1_6_kommunikationspolitik"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/link_section_1_7_werbeerfolgskontrolle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.7 Kennzahlen der Werbeerfolgskontrolle"
+            android:textColor="@android:color/holo_blue_dark"
+            android:clickable="true"
+            android:onClick="scrollToSection"
+            android:tag="@+id/section_1_7_werbeerfolgskontrolle"
+            android:paddingBottom="12dp" />
+
+        <!-- Ende des Inhaltsverzeichnies -->
+
+        <!-- Abschnitt 1: Marketing -->
+        <TextView
+            android:id="@+id/section_1_marketing"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1. Marketing"
             android:textStyle="bold"
-            android:textSize="24sp"
-            android:paddingBottom="12dp" />
+            android:textSize="20sp"
+            android:paddingBottom="12dp"/>
 
-        <!-- Unterüberschrift: Grundlagen -->
+        <!-- Abschnitt 1.1: Grundlagen -->
         <TextView
-            android:id="@+id/marketing_grundlagen"
+            android:id="@+id/section_1_1_grundlagen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1.1 Grundlagen"
             android:textStyle="bold"
-            android:textSize="20sp"
-            android:paddingBottom="8dp" />
+            android:textSize="18sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"/>
 
-        <!-- Textabsätze -->
+        <!-- Textinhalt -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Marketing bedeutet so viel wie 'vom Markt her handeln'. Es umfasst alle Maßnahmen, die ein Unternehmen ergreift, um sich Märkte zu schaffen. Dies betrifft alle Abteilungen im Unternehmen."
-            android:paddingBottom="16dp" />
+            android:text="Marketing bedeutet so viel wie 'vom Markt her handeln'. Marketing umfasst alle Maßnahmen, die ein Unternehmen ergreift, um sich Märkte zu schaffen. Das betrifft alle Abteilungen im Unternehmen."
+            android:paddingBottom="12dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Ein Käufermarkt ist eine Marktsituation, in der das Angebot die Nachfrage übersteigt. Käufer haben die Verhandlungsmacht, da es mehr Waren oder Dienstleistungen als Käufer gibt. Preise tendieren dazu, niedrig zu sein. Unternehmen müssen Marketing betreiben."
+            android:paddingBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ein Verkäufermarkt ist das Gegenteil: die Nachfrage übersteigt das Angebot. Verkäufer haben die Verhandlungsmacht, da es mehr Käufer als verfügbare Waren oder Dienstleistungen gibt. Preise tendieren dazu, hoch zu sein."
+            android:paddingBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Absatzwirtschaft bezieht sich auf alle Aktivitäten und Prozesse, die notwendig sind, um Produkte oder Dienstleistungen vom Hersteller zum Endverbraucher zu bringen. Dazu gehören Vertrieb, Logistik, Lagerhaltung und Verkaufsförderung."
+            android:paddingBottom="12dp"/>
+
+        <!-- Abschnitt Ökologische Nachhaltigkeit -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ökologische Nachhaltigkeit"
             android:textStyle="bold"
-            android:text="Käufermarkt:"
-            android:paddingBottom="4dp" />
+            android:textSize="18sp"
+            android:paddingBottom="8dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Eine Marktsituation, in der das Angebot die Nachfrage übersteigt. Käufer haben die Verhandlungsmacht, da es mehr Waren oder Dienstleistungen als Käufer gibt. Die Preise tendieren dazu, niedrig zu sein. Unternehmen müssen Marketing betreiben."
-            android:paddingBottom="16dp" />
+            android:text="Produkte und Prozesse werden so gestaltet, dass sie die Umwelt möglichst wenig belasten. Dies umfasst umweltfreundliche Produktion, nachhaltige Rohstoffbeschaffung und Minimierung von Abfall."
+            android:paddingBottom="12dp"/>
 
+        <!-- Abschnitt Soziale Nachhaltigkeit -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Soziale Nachhaltigkeit"
             android:textStyle="bold"
-            android:text="Verkäufermarkt:"
-            android:paddingBottom="4dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Das Gegenteil des Käufermarkts. Hier übersteigt die Nachfrage das Angebot. Verkäufer haben die Verhandlungsmacht, da es mehr Käufer als verfügbare Waren oder Dienstleistungen gibt. Die Preise tendieren dazu, hoch zu sein."
-            android:paddingBottom="16dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="Absatzwirtschaft:"
-            android:paddingBottom="4dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Bezieht sich auf alle Aktivitäten und Prozesse, die notwendig sind, um Produkte oder Dienstleistungen vom Hersteller zum Endverbraucher zu bringen. Dazu gehören Vertrieb, Logistik, Lagerhaltung und Verkaufsförderung."
-            android:paddingBottom="16dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="Ökologische Nachhaltigkeit:"
-            android:paddingBottom="4dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Produkte und Prozesse werden so gestaltet, dass sie die Umwelt möglichst wenig belasten. Dazu gehören umweltfreundliche Produktion, nachhaltige Rohstoffbeschaffung und Minimierung von Abfall."
-            android:paddingBottom="16dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="Soziale Nachhaltigkeit:"
-            android:paddingBottom="4dp" />
+            android:textSize="18sp"
+            android:paddingBottom="8dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Das Unternehmen übernimmt soziale Verantwortung, z.B. durch faire Arbeitsbedingungen, Unterstützung der lokalen Gemeinschaft und ethische Geschäftspraktiken."
-            android:paddingBottom="16dp" />
+            android:paddingBottom="12dp"/>
 
+        <!-- Abschnitt Ökonomische Nachhaltigkeit -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Ökonomische Nachhaltigkeit"
             android:textStyle="bold"
-            android:text="Ökonomische Nachhaltigkeit:"
-            android:paddingBottom="4dp" />
+            android:textSize="18sp"
+            android:paddingBottom="8dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Langfristiger wirtschaftlicher Erfolg wird angestrebt, indem Ressourcen effizient genutzt und stabile, faire Beziehungen zu allen Stakeholdern gepflegt werden. Ziel ist es, nicht nur kurzfristige Gewinne zu maximieren, sondern langfristig einen positiven Einfluss auf Umwelt und Gesellschaft zu haben, während gleichzeitig der wirtschaftliche Erfolg gesichert wird."
-            android:paddingBottom="16dp" />
+            android:text="Langfristiger wirtschaftlicher Erfolg wird angestrebt, indem Ressourcen effizient genutzt und stabile, faire Beziehungen zu allen Stakeholdern gepflegt werden."
+            android:paddingBottom="12dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Das Ziel ist es, nicht nur kurzfristige Gewinne zu maximieren, sondern langfristig einen positiven Einfluss auf Umwelt und Gesellschaft zu haben, während gleichzeitig wirtschaftlicher Erfolg gesichert wird."
+            android:paddingBottom="12dp"/>
+
+        <!-- Abschnitt Marketing - Kennzahlen -->
+        <TextView
+            android:id="@+id/section_marketing_kennzahlen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marketing - Kennzahlen"
             android:textStyle="bold"
-            android:text="Marketing-Kennzahlen:"
-            android:paddingBottom="8dp" />
+            android:textSize="18sp"
+            android:paddingBottom="8dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="- Marktpotenzial: Die maximale Aufnahmefähigkeit eines Marktes für ein Produkt, d.h. die Gesamtzahl aller möglichen Käufe durch die Personen, die als Abnehmer infrage kommen."
-            android:paddingBottom="4dp" />
+            android:text="Marktpotenzial: Die maximale Aufnahmefähigkeit eines Marktes für ein Produkt, also die Gesamtzahl aller möglichen Käufe der Personen, die als Abnehmer infrage kommen."
+            android:paddingBottom="8dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="- Marktvolumen: Der tatsächliche Absatz auf einem Markt (eigenes und alle anderen Unternehmen)."
-            android:paddingBottom="4dp" />
+            android:text="Marktvolumen: Der tatsächliche Absatz auf einem Markt (Eigenes und alle anderen Unternehmen)."
+            android:paddingBottom="8dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="- Absatzpotenzial: Der Teil des Marktpotentials, den ein Unternehmen erreichen zu können glaubt."
-            android:paddingBottom="4dp" />
+            android:text="Absatzpotenzial: Der Teil am Marktpotenzial, den ein Unternehmen erreichen zu können glaubt."
+            android:paddingBottom="8dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="- Absatzvolumen: Der tatsächliche Absatz des Unternehmens in Geld- oder Mengeneinheiten."
-            android:paddingBottom="4dp" />
+            android:text="Absatzvolumen: Der tatsächliche Absatz des Unternehmens in Geld- oder Mengeneinheiten."
+            android:paddingBottom="8dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="- Marktanteil: Der prozentuale Anteil des Absatzes eines Unternehmens am Marktvolumen."
-            android:paddingBottom="16dp" />
+            android:text="Marktanteil: Der prozentuale Anteil des Absatzes eines Unternehmens am Marktvolumen."
+            android:paddingBottom="12dp"/>
 
+        <!-- Abschnitt Marketinginstrumente -->
         <TextView
+            android:id="@+id/section_marketinginstrumente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Marketinginstrumente (Marketingmix)"
             android:textStyle="bold"
-            android:text="Marketinginstrumente (Marketingmix):"
-            android:paddingBottom="8dp" />
+            android:textSize="18sp"
+            android:paddingBottom="8dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1. Produkt- und Sortimentspolitik"
-            android:paddingBottom="4dp" />
+            android:paddingBottom="4dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2. Preis- und Konditionenpolitik"
-            android:paddingBottom="4dp" />
+            android:paddingBottom="4dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3. Distributionspolitik"
-            android:paddingBottom="4dp" />
+            android:paddingBottom="4dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4. Kommunikationspolitik"
-            android:paddingBottom="16dp" />
+            android:paddingBottom="12dp"/>
 
-        <!-- Weitere Texte werden hier hinzugefügt -->
-
-        <!-- Unterüberschrift: Marketingziele und Marketingstrategien -->
+        <!-- Abschnitt 1.2 Marketingziele und Marketingstrategien -->
         <TextView
-            android:id="@+id/marketing_ziele_strategien"
+            android:id="@+id/section_marketingziele_strategien"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1.2 Marketingziele und Marketingstrategien"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:paddingBottom="8dp" />
+            android:paddingBottom="12dp"/>
 
-        <!-- Textabsätze zu Marketingziele und Marketingstrategien -->
+        <!-- SMART-Prinzip -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Marketingziele können in quantitative und qualitative Ziele unterteilt werden und sollten nach dem SMART-Prinzip formuliert sein:"
-            android:paddingBottom="16dp" />
+            android:paddingBottom="8dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
             android:text="SMART-Prinzip:"
-            android:paddingBottom="4dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="- Spezifisch: Klar und eindeutig formuliert.\n- Messbar: Fortschritte und Zielerreichung müssen quantifizierbar sein.\n- Attraktiv: Ziel sollte motivierend und herausfordernd sein.\n- Realistisch: Erreichbar und machbar.\n- Terminiert: Mit einer klaren Zeitvorgabe versehen."
-            android:paddingBottom="16dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:text="Quantitative Ziele:"
-            android:paddingBottom="4dp" />
+            android:paddingBottom="8dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="- Umsatzsteigerung um 10% in den nächsten 12 Monaten.\n- Erhöhung des Marktanteils um 5% innerhalb eines Jahres.\n- Gewinnung von 1.000 neuen Kunden im nächsten Quartal."
-            android:paddingBottom="16dp" />
+            android:text="• Spezifisch: Klar und eindeutig formuliert."
+            android:paddingBottom="4dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="• Messbar: Fortschritte und Zielerreichung müssen quantifizierbar sein."
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Attraktiv: Ziel sollte motivierend und herausfordernd sein."
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Realistisch: Erreichbar und machbar."
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Terminiert: Mit einer klaren Zeitvorgabe versehen."
+            android:paddingBottom="12dp"/>
+
+        <!-- Quantitative Ziele -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantitative Ziele sind messbare, numerische Ziele:"
             android:textStyle="bold"
-            android:text="Qualitative Ziele:"
-            android:paddingBottom="4dp" />
+            android:paddingBottom="8dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="- Verbesserung der Markenbekanntheit und -wahrnehmung.\n- Steigerung der Kundenzufriedenheit und -loyalität.\n- Ausbau des Unternehmensimages als nachhaltiger und sozial verantwortlicher Akteur."
-            android:paddingBottom="16dp" />
+            android:text="• Umsatzsteigerung um 10% in den nächsten 12 Monaten."
+            android:paddingBottom="4dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="• Erhöhung des Marktanteils um 5% innerhalb eines Jahres."
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Gewinnung von 1.000 neuen Kunden im nächsten Quartal."
+            android:paddingBottom="12dp"/>
+
+        <!-- Qualitative Ziele -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qualitative Ziele sind schwer messbare, nicht-numerische Ziele:"
             android:textStyle="bold"
-            android:text="Drei Wettbewerbsstrategien nach Porter:"
-            android:paddingBottom="8dp" />
+            android:paddingBottom="8dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1. Differenzierungsstrategie: Die Produktpalette differenziert sich von der Konkurrenz.\n   - Beispiel: Apple, das durch innovative Produkte, hochwertiges Design und eine starke Markenidentität auffällt."
-            android:paddingBottom="8dp" />
+            android:text="• Verbesserung der Markenbekanntheit und -wahrnehmung."
+            android:paddingBottom="4dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2. Kostenführerschaft: Durch effiziente Produktion Kostenführer werden.\n   - Beispiel: Walmart, das durch niedrige Preise und hohe Effizienz eine breite Kundenbasis anspricht."
-            android:paddingBottom="8dp" />
+            android:text="• Steigerung der Kundenzufriedenheit und -loyalität."
+            android:paddingBottom="4dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="3. Nischenstrategie: Mithilfe eines Produkts eine neue Nische etablieren und diese übernehmen.\n   - Beispiel: Ferrari, das sich auf ein kleines Segment des Luxusautomarktes konzentriert und dort durch einzigartige Produkte punktet."
-            android:paddingBottom="16dp" />
+            android:text="• Ausbau des Unternehmensimages als nachhaltiger und sozial verantwortlicher Akteur."
+            android:paddingBottom="12dp"/>
 
+        <!-- Abschnitt Wettbewerbsstrategien nach Porter -->
+        <TextView
+            android:id="@+id/section_porter_strategien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drei Wettbewerbsstrategien nach Porter"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="12dp"/>
+
+        <!-- Differenzierungsstrategie -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Differenzierungsstrategie: Produktpalette differenziert sich von der Konkurrenz."
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beispiel: Apple, das durch innovative Produkte, hochwertiges Design und eine starke Markenidentität auffällt."
+            android:paddingBottom="12dp"/>
+
+        <!-- Kostenführerschaft -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kostenführerschaft: Durch effiziente Produktion Kostenführer werden."
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beispiel: Walmart, das durch niedrige Preise und hohe Effizienz eine breite Kundenbasis anspricht."
+            android:paddingBottom="12dp"/>
+
+        <!-- Nischenstrategie -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nischenstrategie: Mithilfe eines Produkts eine neue Nische etablieren und diese übernehmen."
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beispiel: Ferrari, das sich auf ein kleines Segment des Luxusautomarktes konzentriert und dort durch einzigartige Produkte punktet."
+            android:paddingBottom="12dp"/>
+
+        <!-- Hinweis zur Wettbewerbsstrategie -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Diese Strategien sind darauf ausgelegt, Unternehmen dabei zu helfen, in ihrem Marktsegment wettbewerbsfähig zu bleiben und sich von der Konkurrenz abzuheben. Es ist wichtig zu beachten, dass ein Unternehmen nicht versuchen sollte, alle drei Strategien gleichzeitig zu verfolgen, da dies zu einer Verwässerung der Wettbewerbsposition führen kann."
-            android:paddingBottom="16dp" />
+            android:paddingBottom="12dp"/>
 
+        <!-- Abschnitt Positionierungsstrategien -->
+        <TextView
+            android:id="@+id/section_positionierungsstrategien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Positionierungsstrategien"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="12dp" />
+
+        <!-- Markterkundung -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Markterkundung: Unsystematische und ohne weitreichende Vorbereitung."
             android:textStyle="bold"
-            android:text="Positionierungsstrategien:"
             android:paddingBottom="8dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="- Markterkundung: Unspezifische und ohne weitreichende Vorbereitung durchgeführte Untersuchungen.\n   - Beispiel: Spontane Messegespräche, gelegentliche Auswertung von Vertreterberichten."
+            android:text="Beispiel: Spontane Messegespräche, gelegentliche Auswertung von Vertreterberichten."
+            android:paddingBottom="12dp" />
+
+        <!-- Marktforschung -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marktforschung: Systematisch und gezielt vorbereitet mit wissenschaftlichen Methoden."
+            android:textStyle="bold"
             android:paddingBottom="8dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="- Marktforschung: Systematische und gezielt vorbereitete Untersuchungen mit wissenschaftlichen Methoden.\n   - Beispiel: Gezielte Befragung der Kunden, die später wissenschaftlich ausgewertet wird."
-            android:paddingBottom="16dp" />
+            android:text="Beispiel: Gezielte Befragung der Kunden, die später wissenschaftlich ausgewertet wird."
+            android:paddingBottom="12dp" />
 
+        <!-- Bereiche der Marktforschung -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
             android:text="Bereiche der Marktforschung:"
+            android:textStyle="bold"
             android:paddingBottom="8dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="- Bedarfsforschung\n- Konkurrenzforschung\n- Absatzforschung"
-            android:paddingBottom="16dp" />
+            android:text="- Bedarfsforschung"
+            android:paddingBottom="4dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
+            android:text="- Konkurrenzforschung"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Absatzforschung"
+            android:paddingBottom="12dp" />
+
+        <!-- Ökoskopische Marktforschung -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Ökoskopische Marktforschung:"
-            android:paddingBottom="4dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sachbezogene Marktforschung mit dem Fokus auf objektive Informationen, wie z.B. Preise oder Umsatzzahlen."
-            android:paddingBottom="16dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sachbezogene Marktforschung, im Mittelpunkt stehen objektive Informationen, wie z.B. Preise oder Umsatzzahlen."
+            android:paddingBottom="12dp" />
+
+        <!-- Demoskopische Marktforschung -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Demoskopische Marktforschung:"
-            android:paddingBottom="4dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Untersuchung der Marktteilnehmer und deren subjektiver Einstellung und Verhaltensmuster, wie z.B. Einkommen, Alter und Beruf."
-            android:paddingBottom="16dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Es geht um die Marktteilnehmer und deren subjektive Einstellung und Verhaltensmuster, wie z.B. Einkommen, Alter und Beruf."
+            android:paddingBottom="12dp" />
+
+        <!-- Marktbeobachtung und Marktanalyse -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Marktbeobachtung:"
-            android:paddingBottom="4dp" />
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Datenerhebung über einen längeren Zeitraum."
-            android:paddingBottom="16dp" />
+            android:paddingBottom="12dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
             android:text="Marktanalyse:"
-            android:paddingBottom="4dp" />
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Einmalige Datenerhebung."
-            android:paddingBottom="16dp" />
+            android:paddingBottom="12dp" />
 
-        <!-- Weitere Texte werden hier hinzugefügt -->
+        <!-- Primärforschung und Sekundärforschung -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Primärforschung:"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daten müssen mühsam neu generiert werden durch aufwändige Methoden, wie Testmarkt oder direkte Kundenbefragung."
+            android:paddingBottom="12dp" />
 
-    </LinearLayout>
-</ScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sekundärforschung:"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auswertung von bereits vorhandenen Daten, wie z.B. Internetdaten, Fachzeitschriften und Umsatzstatistiken."
+            android:paddingBottom="12dp" />
+
+        <!-- Interne und externe Informationsquellen -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Für die Sekundärforschung kann auf interne und externe Informationsquellen zugegriffen werden."
+            android:textStyle="bold"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interne Informationsquellen: Betriebeigene Umsatzstatistiken und andere Daten aus der Buchhaltung."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Externe Informationsquellen: Publikationen von Verbänden oder dem Statistischen Bundesamt."
+            android:paddingBottom="12dp" />
+
+        <!-- Abschnitt Wachstumsstrategien nach ANSOFF -->
+        <TextView
+            android:id="@+id/section_wachstumsstrategien_ansoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wachstumsstrategien nach ANSOFF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="12dp" />
+
+        <!-- Marktdurchdringung -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Marktdurchdringung: Diese Strategie zielt darauf ab, den Marktanteil für bestehende Produkte auf bestehenden Märkten zu erhöhen."
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mittel: Steigerung der Verkaufszahlen durch verstärkte Marketingaktivitäten, Preissenkungen, Werbekampagnen oder Verbesserung des Vertriebsnetzes."
+            android:paddingBottom="12dp" />
+
+        <!-- Marktentwicklung -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Marktentwicklung: Diese Strategie beinhaltet die Suche nach neuen Märkten für bestehende Produkte."
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mittel: Erschließung neuer geografischer Märkte, Zielgruppen oder Anwendungsbereiche für bestehende Produkte."
+            android:paddingBottom="12dp" />
+
+        <!-- Produktentwicklung -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Produktentwicklung: Diese Strategie fokussiert sich auf die Entwicklung neuer Produkte für bestehende Märkte."
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mittel: Einführung von Produktinnovationen, Erweiterung des bestehenden Produktportfolios oder Verbesserung bestehender Produkte."
+            android:paddingBottom="12dp" />
+
+        <!-- Diversifikation -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Diversifikation: Diese Strategie beinhaltet die Entwicklung neuer Produkte für neue Märkte. Sie ist die risikoreichste Strategie, da sie sowohl neue Produkte als auch neue Märkte umfasst."
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beispiel: Ein Lebensmittelhersteller beginnt, Haushaltsreinigungsmittel zu produzieren und verkauft diese in einem neuen Marktsegment."
+            android:paddingBottom="12dp" />
+
+        <!-- Abschnitt Grund- und Zusatznutzen -->
+        <TextView
+            android:id="@+id/section_grund_und_zusatznutzen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grund- und Zusatznutzen"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="12dp" />
+
+        <!-- Grundnutzen -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Der Grundnutzen einer Handcreme ist, dass die Haut nach der Anwendung geschmeidiger ist."
+            android:paddingBottom="12dp" />
+
+        <!-- Zusatznutzen -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Der Zusatznutzen lässt sich in objektiv und subjektiv unterscheiden:"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Objektiver Zusatznutzen: Das Produkt hat nachweisliche Vorteile, wie z.B. das schnelle Einziehen in die Haut."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Subjektiver Zusatznutzen: Befriedigung von Nebenbedürfnissen, wie z.B. ein schönes Design der Verpackung."
+            android:paddingBottom="12dp" />
+
+        <!-- Abschnitt Produkt- und Sortimentspolitik -->
+        <TextView
+            android:id="@+id/section_produkt_und_sortimentspolitik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.3 Produkt- und Sortimentspolitik"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="12dp" />
+
+        <!-- Unterscheidung zwischen Produktionsprogramm und Sortiment -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unterscheidung zwischen Produktionsprogramm und Sortiment (Breite und Tiefe)"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Die Gesamtheit der angebotenen Waren eines Handelsunternehmens wird als Sortiment bezeichnet. Ein Sortiment bezieht sich in der Regel immer auf Sach- oder Dienstleistungen, während bei den Produkten im produzierenden Gewerbe von einem Produktionsprogramm gesprochen wird."
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Das Sortiment kann bezüglich Breite und Tiefe variieren. Unter Sortimentsbreite versteht man die Vielfalt der angebotenen Produkt- bzw. Warengruppen. Die Sortimentstiefe hingegen ist die Vielfalt der Güter innerhalb einer Produktgruppe."
+            android:paddingBottom="12dp" />
+
+        <!-- Breites Sortiment -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breites Sortiment: Ein Unternehmen bietet viele verschiedene Produktlinien an."
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beispiel: Ein Supermarkt, der Lebensmittel, Haushaltswaren, Kleidung und Elektronik verkauft."
+            android:paddingBottom="12dp" />
+
+        <!-- Enges Sortiment -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enges Sortiment: Ein Unternehmen bietet nur wenige Produktlinien an."
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beispiel: Ein Geschäft, das sich ausschließlich auf Sportbekleidung spezialisiert hat."
+            android:paddingBottom="12dp" />
+
+        <!-- Tiefes Sortiment -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiefes Sortiment: Eine Produktlinie hat viele verschiedene Varianten."
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beispiel: Ein Schuhgeschäft, das ein bestimmtes Schuhmodell in vielen verschiedenen Größen, Farben und Designs anbietet."
+            android:paddingBottom="12dp" />
+
+        <!-- Flaches Sortiment -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flaches Sortiment: Eine Produktlinie hat nur wenige Varianten."
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beispiel: Ein Geschäft, das nur eine Art von Notizbuch in einer einzigen Größe und Farbe verkauft."
+            android:paddingBottom="12dp" />
+
+        <!-- Abschnitt Produktionsprogrammpolitische Strategien -->
+        <TextView
+            android:id="@+id/section_produktionsprogrammpolitische_strategien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Produktionsprogrammpolitische Strategien"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="12dp" />
+
+        <!-- Universalstrategie -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Universalstrategie: Breites Sortiment von allem etwas spezielle Kundenwünsche können aber nicht befriedigt werden."
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beispiel: Großer Supermarkt"
+            android:paddingBottom="12dp" />
+
+        <!-- Spezialisierungsstrategie -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spezialisierungsstrategie: Unternehmen konzentriert sich auf einen bestimmten Markt und bietet alle Produktvarianten an."
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beispiel: Fachgeschäft"
+            android:paddingBottom="12dp" />
+
+        <!-- Differenzierungsstrategie -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Differenzierungsstrategie: Produkte aus der gleichen Branche werden hinzugenommen. Problem ist, dass die vorhandenen Produkte sich dann eventuell schlechter verkaufen."
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <!-- Diversifikation -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diversifikation: Produkte aus ganz anderer Branche werden zur Risikostreuung hinzugezogen. Macht nur Sinn, wenn sich die Produkte ergänzen. Es droht Zersplitterung."
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <!-- Produktinnovation -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Produktinnovation: Ein völlig neues Produkt wird eingeführt. Bei der Differenzierung stammt das neue Produkt aus dem gleichen Bereich."
+            android:textStyle="bold"
+            android:paddingBottom="12dp" />
+
+        <!-- Produktvariation -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Produktvariation: Das Produkt wird leicht verändert, behält aber seinen Wiedererkennungscharakter."
+            android:textStyle="bold"
+            android:paddingBottom="12dp" />
+
+        <!-- Produktelimination -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Produktelimination: Ein nicht erfolgreiches Produkt wird vom Markt genommen."
+            android:textStyle="bold"
+            android:paddingBottom="12dp" />
+
+        <!-- Produktindividualisierung -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Produktindividualisierung: Hier wird das Produktionsprogramm so verändert, dass individuelle Kundenwünsche berücksichtigt werden können."
+            android:textStyle="bold"
+            android:paddingBottom="12dp" />
+
+        <!-- Abschnitt Produkt-Lebenszyklus -->
+        <TextView
+            android:id="@+id/section_produkt_lebenszyklus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Produkt-Lebenszyklus"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="12dp" />
+
+        <!-- Entwicklungsphase -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Entwicklungsphase: Marktforschung und Ideensammlung"
+            android:paddingBottom="8dp" />
+
+        <!-- Einführungsphase -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Einführungsphase: Produkt wird neu auf den Markt gebracht (Innovatoren)"
+            android:paddingBottom="8dp" />
+
+        <!-- Wachstumsphase -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Wachstumsphase: Umsätze steigen rasant und Break-even-Punkt wird in Richtung Gewinnzone überschritten (Frühe Adaptoren)"
+            android:paddingBottom="8dp" />
+
+        <!-- Reifephase -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Reifephase: Umsatz steigt nur noch langsam bis zum Maximum (Frühe Mehrheit)"
+            android:paddingBottom="8dp" />
+
+        <!-- Sättigungsphase -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Sättigungsphase: Umsatz beginnt zu fallen und es gibt immer mehr Konkurrenzprodukte (Späte Mehrheit)"
+            android:paddingBottom="8dp" />
+
+        <!-- Verfallphase -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. Verfallphase: Deutlicher Umsatzrückgang und Break-even-Punkt wird in Richtung Verlustzone durchschritten (Nachzügler)"
+            android:paddingBottom="12dp" />
+
+        <!-- Innovatoren -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Innovatoren: Produkttester und Trendsetter"
+            android:paddingBottom="8dp" />
+
+        <!-- Frühe Adaptoren -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frühe Adaptoren: Menschen, die die neuesten technischen Errungenschaften oder die neuesten Varianten von Produkten oder modischen Accessoires nutzen."
+            android:paddingBottom="8dp" />
+
+        <!-- Frühe Mehrheit -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frühe Mehrheit: Vorsichtiger als Innovatoren, warten bis die Produkte erprobt sind"
+            android:paddingBottom="8dp" />
+
+        <!-- Späte Mehrheit -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Späte Mehrheit: Kaufen Produkte, wenn sie schon überall auf dem Markt sind und jeder sie hat"
+            android:paddingBottom="8dp" />
+
+        <!-- Nachzügler -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nachzügler: Bleiben lieber bei alten Produkten"
+            android:paddingBottom="12dp" />
+
+        <!-- Portfolio-Analyse am Beispiel der BCG-Matrix -->
+        <TextView
+            android:id="@+id/section_portfolio_analyse_bcgmatrix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Portfolio-Analyse am Beispiel der BCG-Matrix (Boston Consulting Group)"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="12dp" />
+
+        <!-- Questionmarks -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Questionmarks: Entwicklung des Produktes ungewiss. Produkt befindet sich in der Einführungsphase mit geringem Marktanteil und hohem Wachstumspotenzial."
+            android:paddingBottom="8dp" />
+
+        <!-- Stars -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stars: Spitzenprodukte in der fortgeschrittenen Wachstumsphase mit hohem Marktanteil und Wachstumspotenzial."
+            android:paddingBottom="8dp" />
+
+        <!-- Cash Cows -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash Cows: Produkte in der Sättigungsphase mit hohem Marktanteil und niedrigem Wachstumspotenzial."
+            android:paddingBottom="8dp" />
+
+        <!-- Poor Dogs -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poor Dogs: Produkte in der Verfallsphase mit niedrigem Marktanteil und Wachstumspotenzial."
+            android:paddingBottom="12dp" />
+
+        <!-- Abschnitt Preispolitik -->
+        <TextView
+            android:id="@+id/section_preispolitik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.4 Preispolitik"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="12dp" />
+
+        <!-- Faktoren der Preisbildung -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faktoren der Preisbildung: Nachfrage, Kosten, Unternehmensziele, Produktlebenszyklus"
+            android:paddingBottom="12dp" />
+
+        <!-- Deckungsbeitrag -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deckungsbeitrag = Barverkaufspreis - variable Kosten"
+            android:paddingBottom="12dp" />
+
+        <!-- Preisuntergrenzen und Preisobergrenze -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kurz- und langfristige Preisuntergrenzen, Preisobergrenzen"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Die langfristige Preisuntergrenze liegt in Höhe der Selbstkosten. Sie kann dauerhaft genutzt werden, allerdings wird dann kein Gewinn erzielt."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Die kurzfristige Preisuntergrenze liegt in Höhe der variablen Kosten. Der Deckungsbeitrag ist dann null. Produkte, die zu diesem Preis verkauft werden, leisten keinen Beitrag zur Deckung der Fixkosten, sondern nur zu den variablen Kosten."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Die Preisobergrenze bezeichnet den maximalen Preis, den Kunden bereit sind, für ein Produkt oder eine Dienstleistung zu zahlen."
+            android:paddingBottom="12dp" />
+
+        <!-- Marktorientierte Preisstrategien -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marktorientierte Preisstrategien"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Kostenorientierte Preispolitik: Der Verkaufspreis wird aufgrund der betrieblichen Kosten festgelegt."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Nachfrageorientierte Preispolitik: Der Verkaufspreis richtet sich an der Zahlungsbereitschaft der Nachfrager. Zur Überprüfung wird eine Deckungsbeitragsrechnung gemacht."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Konkurrenzorientierte Preispolitik: Der Verkaufspreis orientiert sich an den Wettbewerbern. Zur Überprüfung wird wieder eine Deckungsbeitragsrechnung gemacht."
+            android:paddingBottom="12dp" />
+
+        <!-- Preisstrategien -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preisstrategien"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bei der Penetrationsstrategie wird ein relativ niedriger Preis eingesetzt, um den Markt zu übernehmen und schnell hohe Umsätze zu generieren. Wird die Penetrationsstrategie dauerhaft eingesetzt, handelt es sich um die Niedrigpreisstrategie."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bei der Skimming-Strategie werden die Preise sehr hoch angesetzt, um den maximalen Gewinn herauszuholen. Dies wird besonders bei Produktneuheiten benutzt. Wird die Skimming-Strategie dauerhaft eingesetzt, handelt es sich um die Hochpreisstrategie."
+            android:paddingBottom="12dp" />
+
+        <!-- Abschnitt Psychologische Preisstrategien -->
+        <TextView
+            android:id="@+id/section_psychologische_preisstrategien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Psychologische Preisstrategien"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Preisschwellen: Festlegung von Preisen knapp unter runden Zahlen, um den Preis niedriger erscheinen zu lassen."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Prestige-Preisstrategie: Festlegung von hohen Preisen, um ein Produkt als hochwertig und exklusiv wahrzunehmen."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Rabatt- und Sonderpreisaktionen: Festlegung von hohen Preisen und anschließenden Reduzierungen, die aber eigentlich keine echte Reduzierung darstellen."
+            android:paddingBottom="12dp" />
+
+        <!-- Abschnitt Preisdifferenzierungsstrategien -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preisdifferenzierungsstrategien"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Zeitliche Differenzierung: Eine Leistung oder ein Produkt wird zu verschiedenen Zeiten unterschiedlich teuer angeboten (Saisonpreise)."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Räumliche Differenzierung: Eine Leistung oder ein Produkt wird an verschiedenen Orten zu unterschiedlichen Preisen angeboten (Großstädte oder ländliche Gebiete)."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Personelle Differenzierung: Je nach Kundengruppe werden für die Leistung oder Produkte verschiedene Preise verlangt (Mitarbeiterpreise, Schülertickets)."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Sachliche Differenzierung: Gleiche Produkte oder Leistungen werden in verschiedenen Aufmachungen zu unterschiedlichen Preisen verkauft (No-Name-Ware und Markenware)."
+            android:paddingBottom="12dp" />
+
+        <!-- Abschnitt Preiselastizitäten -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preiselastizitäten"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Die Preiselastizität der Nachfrage zeigt, wie stark die Menge der nachgefragten Güter auf eine Preisänderung reagiert. Je stärker die Änderungen der Nachfrage ausfällt, desto größer ist die Preiselastizität dieses Gutes."
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elastizität = 1 Isoelastische Nachfrage: Preisänderung und Mengenänderung sind gleich (Unrealistisch)."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elastizität > 1 Elastische Nachfrage: Mengenreaktion fällt stärker aus als die Preisänderung (z.B. Autos und andere Güter des gehobenen Bedarfs). Preis wurde leicht gesenkt und es wird direkt stark eingekauft."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elastizität < 1 Unelastische Nachfrage: Mengenreaktion ist kleiner als die Preisänderung (z.B. Nahrungsmittel, Benzin). Preis wurde stark gesenkt, aber es wird nicht deutlich mehr eingekauft."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elastizität = 0 Vollkommen unelastische Nachfrage: Kunden reagieren nicht auf Preisänderungen, weil Produkte zu wichtig sind (z.B. Medikamente, bestimmte Lebensmittel)."
+            android:paddingBottom="12dp" />
+
+        <!-- Abschnitt Distributionspolitik -->
+        <TextView
+            android:id="@+id/section_distributionspolitik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.5 Distributionspolitik"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="12dp" />
+
+        <!-- Direkter und indirekter Absatz -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Direkter und indirekter Absatz"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Direkter Absatz: Unternehmen bringt Produkte mit eigenen Absatzorganen an den Konsumenten (Handlungsreisender, hauseigene Verkaufsabteilungen)."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vorteile: Möglichkeit, schnell auf Kundenwünsche zu reagieren, Einsparung von Kosten für unternehmensfremde Absatzorgane, Preise und Werbung (Absatzpolitik) liegen allein in der Entscheidung des Unternehmens."
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indirekter Absatz: Unternehmen nutzt betriebsfremde Absatzorgane (Handelsvertreter, Groß- oder Einzelhandel)."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vorteile: Unternehmen wird entlastet, weil externer Händler den Verkauf übernimmt, Ausnutzen der Vorteile von Handelsgeschäften (Präsenz an vielen Orten, intensive Kundenbetreuung, Lagerung)."
+            android:paddingBottom="12dp" />
+
+        <!-- Gegenüberstellung Handlungsreisender und Handelsvertreter -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gegenüberstellung Handlungsreisender und Handelsvertreter"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Handlungsreisender: Gehört zum Unternehmen und ist also weisungsgebunden, flexibel einsetzbar beim Kunden."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kosten = monatliches Gehalt + umsatzabhängige Provision."
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Handelsvertreter: Selbstständiger Kaufmann, eingesetzt für kleinere Firmen, die keinen Außendienst haben."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kosten = umsatzabhängige Provision."
+            android:paddingBottom="12dp" />
+
+        <!-- Absatzkanäle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Absatzkanäle"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Franchising: Beim Franchising nutzt der Franchisenehmer (selbstständiger Unternehmer, der dem Kunden als Filiale erscheint) gegen Gebühr vom Franchisegeber ein bereits erfolgreiches Geschäfts- und Marketingkonzept."
+            android:paddingBottom="12dp" />
+
+        <!-- E-Commerce -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-Commerce"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vorteile für den Verkäufer: Kundenaquisition (Gewinnung neuer Kunden) kann zeitgleich und weltweit geschehen, Kosteneinsparungen wegen Miet- und Personalkosten, größere weltweite Absatzmärkte."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vorteile für den Kunden: Bequemer Einkauf von zu Hause, weltweites riesiges Warensortiment, Preisvergleiche, eventuelle Preisvorteile, weil Unternehmen Verkäufer Preisvorteile durch E-Commerce an Kunden weitergeben."
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online-Shops kommen vom Unternehmen und verkaufen deren Produkte."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bei digitalen Marktplätzen, wie Amazon, bieten Händler ihre Produkte an."
+            android:paddingBottom="12dp" />
+
+        <!-- Abschnitt Kommunikationspolitik -->
+        <TextView
+            android:id="@+id/section_kommunikationspolitik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.6 Kommunikationspolitik"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="12dp" />
+
+        <!-- Kommunikationsinstrumente -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kommunikationsinstrumente"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Absatzwerbung: Bekanntmachung und Förderung des Verkaufs von Produkten/Dienstleistungen. (Werbespots und Plakate z.B. im TV oder Radio)"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Verkaufsförderung: Kurzfristige Anreize schaffen, um den Verkauf zu steigern. (Rabatte, Sonderaktionen)"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Öffentlichkeitsarbeit (PR - Public Relations): Aufbau und Pflege eines positiven Images und einer guten Beziehung zur Öffentlichkeit. (Interviews, Presseberichte)"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Sponsoring: Unterstützung von Veranstaltungen, Personen oder Organisationen im Austausch für Werbemöglichkeiten. (Trikots für Fußballmannschaften mit Unternehmenslogo)"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Direktmarketing: Direkte Ansprache von potenziellen Kunden zur Verkaufsförderung. (E-Mails, Post und SMS)"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. Product Placement: Unauffällige Platzierung von Produkten in Medieninhalten. (In Filmen werden unauffällig Marken benutzt)"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7. Events: Schaffung von Erlebnissen und direkten Kundenkontakten. (Messen, Produktpräsentationen)"
+            android:paddingBottom="12dp" />
+
+        <!-- Abschnitt Internetbasierte Kommunikation -->
+        <TextView
+            android:id="@+id/section_internetbasierte_kommunikation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.6 Internetbasierte Kommunikation"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="12dp" />
+
+        <!-- Internetbasierte Kommunikation Instrumente -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Internetbasierte Kommunikation"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Influencer-Marketing: Nutzt das Vertrauen und die Reichweite von Influencern, um Produkte authentisch zu bewerben. (Fitness-Influencerin postet auf Instagram sich mit einem Fitnessgetränk und erhält dafür Bezahlung oder kostenlose Produkte von der Firma)"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Virales Marketing: Zielt darauf ab, Inhalte zu schaffen, die sich schnell und weit verbreiten. (Ein witziges Werbevideo für ein Produkt wird auf YouTube hochgeladen und erreicht innerhalb weniger Tage Millionen von Aufrufen)"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Guerilla-Marketing: Setzt auf kreative und überraschende Aktionen, die im Gedächtnis bleiben und Aufmerksamkeit erregen. (Nutzung von Straßenkunst, Flashmobs oder anderen kreativen Ansätzen, die viral gehen können)"
+            android:paddingBottom="12dp" />
+
+        <!-- Abschnitt Werbeetat -->
+        <TextView
+            android:id="@+id/section_werbeetat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Werbeetat"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="12dp" />
+
+        <!-- Werbeetat Informationen -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Der Werbeetat ist die Geldmenge, die ein Unternehmen für Werbezwecke zur Verfügung stellt."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Prozyklische Werbung: Werbung wird verstärkt, wenn der Markt gut läuft und die Nachfrage hoch ist."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Antizyklische Werbung: Werbung wird verstärkt, wenn der Markt schwächelt und die Nachfrage gering ist."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Nivellierungsprinzip der Werbeausgaben: Gleichmäßige Verteilung der Werbeausgaben über das Jahr, unabhängig von saisonalen Schwankungen oder Marktzyklen."
+            android:paddingBottom="12dp" />
+
+        <!-- Tausend-Kontakte-Preis -->
+        <TextView
+            android:id="@+id/section_tausend_kontakte_preis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tausend-Kontakte-Preis"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Der Preis, den ein Werbetreibender zahlen muss, um tausend potenzielle Kunden zu erreichen."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qualitativer Tausend-Kontakte-Preis: Der Preis, den ein Werbetreibender zahlen muss, um tausend Kunden der Zielgruppe zu erreichen."
+            android:paddingBottom="12dp" />
+
+        <!-- Abschnitt Kennzahlen der Werbeerfolgskontrolle -->
+        <TextView
+            android:id="@+id/section_werbeerfolgskontrolle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.7 Kennzahlen der Werbeerfolgskontrolle"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="12dp" />
+
+        <!-- Kennzahlen der Werbeerfolgskontrolle Informationen -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seitenaufrufe: Die Gesamtzahl der Aufrufe einer Webseite."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seitenverweildauer: Die durchschnittliche Zeit, die ein Besucher auf der Webseite verbringt."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Werbeerfolg: Umsatzsteigerung während einer Werbemaßnahme. Berechnung: Umsatz nach der Werbemaßnahme - Umsatz vor der Werbemaßnahme."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Werberendite: Wenn die Werberendite > 100% ist, ist der Umsatzzuwachs größer als die Werbekosten. Dies deutet darauf hin, dass die Werbung wahrscheinlich lukrativ ist."
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Werbegewinn: Der finanzielle Gewinn, der nach Abzug der Werbekosten verbleibt. Berechnung: Umsatzzuwachs - Kosten der Werbung."
+            android:paddingBottom="12dp" />
+
+        LinearLayout />
+
+    ScrollView />
+
