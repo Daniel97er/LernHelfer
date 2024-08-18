@@ -1518,7 +1518,7 @@
             android:text="Werbegewinn: Der finanzielle Gewinn, der nach Abzug der Werbekosten verbleibt. Berechnung: Umsatzzuwachs - Kosten der Werbung."
             android:paddingBottom="12dp" />
 
-        LinearLayout />
+        </LinearLayout>
 
-    ScrollView />
+    </ScrollView>
 
