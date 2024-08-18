@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         val listView2: ListView = findViewById(R.id.listview2)
         val listView3: ListView = findViewById(R.id.listview3)
 
-        val list1 = listOf("Bezugspreiskalkulation", "Deckungsbeitrag", "Langfristige Preisuntergrenze", "Optimale Bestellmenge", "Preiselastizitaet", "Tausenderpreis", "Tausenderpreis(Qualitativ)", "Eigenkapitalrendite", "Marketing Skript")
+        val list1 = listOf("Bezugspreiskalkulation", "Deckungsbeitrag", "Langfristige Preisuntergrenze", "Optimale Bestellmenge", "Preiselastizitaet", "Tausenderpreis", "Tausenderpreis(Qualitativ)", "Eigenkapitalrendite")
         val list2 = listOf("Dichte", "Stoffmenge")
         val list3 = listOf("Nullstellen")
 
