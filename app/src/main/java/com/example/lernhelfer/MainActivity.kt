@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         val listView2: ListView = findViewById(R.id.listview2)
         val listView3: ListView = findViewById(R.id.listview3)
 
-        val list1 = listOf("Bezugspreiskalkulation", "Deckungsbeitrag", "Langfristige Preisuntergrenze", "Optimale Bestellmenge", "Preiselastizitaet", "Tausenderpreis", "Tausenderpreis(Qualitativ)", "Eigenkapitalrendite")
+        val list1 = listOf("Bezugspreiskalkulation", "Deckungsbeitrag", "Langfristige Preisuntergrenze", "Optimale Bestellmenge", "Preiselastizitaet", "Tausenderpreis", "Tausenderpreis(Qualitativ)", "Eigenkapitalrendite", "Marketing-Skript")
         val list2 = listOf("Dichte", "Stoffmenge")
         val list3 = listOf("Nullstellen")
 
@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
                 5 -> startActivity(Intent(this@MainActivity, TausenderpreisActivity::class.java))
                 6 -> startActivity(Intent(this@MainActivity, Tausenderpreis_Qualitativ_Activity::class.java))
                 7 -> startActivity(Intent(this@MainActivity, EigenkapitalrenditeActivity::class.java))
+                8 -> startActivity(Intent(this@MainActivity, MarketingActivity::class.java))
                 // Add more cases for other positions if needed
             }
         }
