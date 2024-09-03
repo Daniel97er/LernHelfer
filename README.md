@@ -9,6 +9,12 @@ Startseite der App mit Übersicht aller Funktionen
 
 
 
-Ausgewählte Funktion
+Ausgewählte Funktion (Eigenkapitalrendite)
 
 ![Alt-Text](pictures_documentation/LernHelfer2.jpg)
+
+
+Ausgewählte Funktion (Nullstellen)
+
+![Alt-Text](pictures_documentation/LernHelfer3.jpg)
+
