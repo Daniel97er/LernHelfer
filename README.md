@@ -14,7 +14,7 @@ Ausgewählte Funktion (Eigenkapitalrendite)
 ![Alt-Text](pictures_documentation/LernHelfer2.jpg)
 
 
-Ausgewählte Funktion (Nullstellen)
+Ausgewählte Funktion (Nullstellen) Koeffizienten eingeben und dann werden die Nullstelen aufgelistet.
 
 ![Alt-Text](pictures_documentation/LernHelfer3.jpg)
 
